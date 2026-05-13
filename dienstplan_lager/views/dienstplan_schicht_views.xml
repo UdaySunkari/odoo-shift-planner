@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- LIST -->
+    <record id="view_dienstplan_schicht_list" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.list</field>
+        <field name="model">dienstplan.schicht</field>
+        <field name="arch" type="xml">
+            <list string="Shift Planning" decoration-muted="state == 'draft'" decoration-success="state == 'published'">
+                <field name="datum_von"/>
+                <field name="datum_bis"/>
+                <field name="employee_id"/>
+                <field name="bereich_id"/>
+                <field name="state" widget="badge"
+                       decoration-info="state == 'draft'"
+                       decoration-success="state == 'published'"/>
+                <field name="notiz" optional="hide"/>
+                <field name="company_id" optional="hide" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- FORM -->
+    <record id="view_dienstplan_schicht_form" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.form</field>
+        <field name="model">dienstplan.schicht</field>
+        <field name="arch" type="xml">
+            <form string="Shift">
+                <header>
+                    <button name="action_publish"
+                            string="Publish"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state == 'published'"/>
+                    <button name="action_draft"
+                            string="Set to Draft"
+                            type="object"
+                            invisible="state == 'draft'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,published"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="employee_id"/>
+                            <field name="bereich_id" options="{'color_field': 'color'}"/>
+                        </group>
+                        <group>
+                            <field name="datum_von"/>
+                            <field name="datum_bis"/>
+                            <field name="ist_abwesenheit" readonly="1"/>
+                        </group>
+                    </group>
+                    <group string="Note">
+                        <field name="notiz" nolabel="1" placeholder="Notes about this shift..."/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- CALENDAR (Drag &amp; Drop) -->
+    <record id="view_dienstplan_schicht_calendar" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.calendar</field>
+        <field name="model">dienstplan.schicht</field>
+        <field name="arch" type="xml">
+            <calendar date_start="datum_von"
+                      date_stop="datum_bis"
+                      color="bereich_id"
+                      mode="week"
+                      event_open_popup="1"
+                      quick_create="0"
+                      string="Shift Planning">
+                <field name="employee_id" filters="1"/>
+                <field name="bereich_id" filters="1"/>
+                <field name="state"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- KANBAN -->
+    <record id="view_dienstplan_schicht_kanban" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.kanban</field>
+        <field name="model">dienstplan.schicht</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="bereich_id" class="o_kanban_small_column">
+                <field name="color"/>
+                <field name="state"/>
+                <templates>
+                    <t t-name="card">
+                        <div t-attf-class="oe_kanban_color_#{record.color.raw_value} oe_kanban_global_click">
+                            <div style="padding:8px;">
+                                <strong><field name="employee_id"/></strong>
+                                <div class="text-muted"><field name="datum_von"/></div>
+                                <div><field name="bereich_id"/></div>
+                                <div><field name="state" widget="badge"
+                                            decoration-info="state == 'draft'"
+                                            decoration-success="state == 'published'"/></div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- SEARCH -->
+    <record id="view_dienstplan_schicht_search" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.search</field>
+        <field name="model">dienstplan.schicht</field>
+        <field name="arch" type="xml">
+            <search string="Search Shifts">
+                <field name="employee_id"/>
+                <field name="bereich_id"/>
+                <separator/>
+                <filter name="this_week" string="This Week"
+                        domain="[('datum_von', '&gt;=', datetime.datetime.combine(context_today() + relativedelta(days=-6, weekday=0), datetime.time(0, 0, 0)).to_utc()),
+                                 ('datum_von', '&lt;', datetime.datetime.combine(context_today() + relativedelta(days=1, weekday=0), datetime.time(0, 0, 0)).to_utc())]"/>
+                <filter name="next_week" string="Next Week"
+                        domain="[('datum_von', '&gt;=', datetime.datetime.combine(context_today() + relativedelta(days=1, weekday=0), datetime.time(0, 0, 0)).to_utc()),
+                                 ('datum_von', '&lt;', datetime.datetime.combine(context_today() + relativedelta(days=8, weekday=0), datetime.time(0, 0, 0)).to_utc())]"/>
+                <separator/>
+                <filter name="draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                <filter name="published" string="Published" domain="[('state', '=', 'published')]"/>
+                <separator/>
+                <filter name="absences" string="Absences" domain="[('ist_abwesenheit', '=', True)]"/>
+                <group>
+                    <filter name="grp_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    <filter name="grp_bereich" string="Area" context="{'group_by': 'bereich_id'}"/>
+                    <filter name="grp_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_dienstplan_schicht" model="ir.actions.act_window">
+        <field name="name">Shift Planning</field>
+        <field name="res_model">dienstplan.schicht</field>
+        <field name="view_mode">calendar,list,kanban,form</field>
+        <field name="search_view_id" ref="view_dienstplan_schicht_search"/>
+        <field name="context">{'search_default_this_week': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first shift
+            </p>
+            <p>
+                Plan shifts via drag &amp; drop in the calendar view
+                or copy the previous week with the "Copy Previous Week" wizard.
+            </p>
+        </field>
+    </record>
+
+    <!-- Action: Wizard "Copy Previous Week" -->
+    <record id="action_copy_previous_week" model="ir.actions.act_window">
+        <field name="name">Copy Previous Week</field>
+        <field name="res_model">dienstplan.copy.previous.week</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

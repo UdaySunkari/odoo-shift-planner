@@ -1,0 +1,688 @@
+# Ukrainian translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Планування змін"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Зона / Роль планування"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Запланована зміна"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Копіювати зміни з одного тижня в інший"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Назва"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Короткий код"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Послідовність"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Індекс кольору"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML-колір"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Є відсутністю"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Опис"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Співробітник"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Зона"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Зони"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Початок"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Кінець"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Примітка"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Статус"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Компанія"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Опубліковано"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Зона зміни за замовчуванням"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Дозволені зони"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Кінець зміни має бути після початку."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML-колір має бути коректним hex-кодом, напр. #3498db або #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Завантаження…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Сьогодні"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Попередній тиждень"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Наступний тиждень"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Відкрити TV-кіоск"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Назад до Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Пошук співробітника…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Зони · перетягніть для планування"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Співробітники · перетягніть для планування"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Заплановані години"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Рівень завантаження"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Відсутності"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Конфлікти"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Ціль: %sг"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Оптимально"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Низько"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Перевірте!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Все гаразд"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Днів"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Цього тижня змін немає"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Перетягніть співробітника з бічної панелі на комірку, щоб створити зміну."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ нова зміна"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Сума / день"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Перетягніть співробітника сюди"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Спочатку додайте співробітника"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Немає зон — спочатку створіть зони"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Зміну створено"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Зміну переміщено"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Зміну видалено"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Неповний час"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Дійсно видалити цю зміну?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Зберегти"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Опублікувати"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Встановити як чернетку"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Зняти з публікації"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "З"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "До"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Відсутність"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Відсутній"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Весь день"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Помилка: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Помилка зв'язку"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Пн"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Вт"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Ср"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Чт"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Пт"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Сб"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Нд"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "Тижд. %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Понеділок"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Середа"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Четвер"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "П'ятниця"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Субота"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Неділя"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Тижд."
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Немає опублікованого графіка на цей тиждень."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Автооновлення кожні 5 хв · Останнє оновлення:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Сталася несподівана помилка. Зверніться до адміністратора."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "У вас немає дозволу на виконання цієї дії."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Зміну не знайдено."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id і bereich_id обов'язкові."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Тижні джерела та призначення не повинні збігатися."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "У вихідному тижні зміни не знайдені."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Тиждень скопійовано"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "Скопійовано %d змін(и) до цільового тижня."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Створіть свою першу зміну"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Плануйте зміни перетягуванням у календарі або скопіюйте попередній тиждень за допомогою майстра \"Копіювати попередній тиждень\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Копіювати"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Класичний календар"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Копіювати попередній тиждень"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Налаштування"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Вихідний тиждень (понеділок)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Цільовий тиждень (понеділок)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Копіювати лише опубліковані зміни"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Спочатку видалити наявні зміни в цільовому тижні"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Увага: усі наявні зміни цільового тижня будуть назавжди видалені перед копіюванням."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Копіює всі зміни з вихідного тижня у цільовий, зберігаючи той самий день і час."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Пошук змін"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Цей тиждень"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Наступний тиждень"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Нотатки про цю зміну..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Додати зміну"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Зміна"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Додати співробітника"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Додати зону"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Створити"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Робоча електронна пошта (необов'язково)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Зона за замовчуванням (необов'язково)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Короткий код (необов'язково)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Колір"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Це тип відсутності"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Обрати співробітника"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Обрати зону"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Обрати день"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Назва обов'язкова"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Назва обов'язкова."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Співробітника створено"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Зону створено"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "День"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Тиждень"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Місяць"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Рік"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Попередній період"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Наступний період"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Пошук співробітників, змін, зон…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "змін"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Редагувати зону"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Зону оновлено"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Зону видалено"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Зону архівовано (досі використовується наявними змінами)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Дійсно видалити зону «%s»?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Зону не знайдено."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Запис про відсутність не знайдено."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Відсутності надходять із модуля HR Holidays. Видалення тут також видалить запис відпустки з HR."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Дійсно видалити відсутність для %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Відсутність видалено"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Тижнева норма годин"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Цільова кількість годин на тиждень. Використовується планувальником для шкали завантаженості — повна ставка = 40, неповна = 20, міні-робота = 10 тощо."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "ШАБЛОНИ · ПЕРЕТЯГНІТЬ ДЛЯ ПЛАНУВАННЯ"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Додати новий шаблон"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Редагувати шаблон"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Шаблон створено"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Шаблон оновлено"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Шаблон видалено"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Дійсно видалити шаблон «%s»?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Шаблонів ще немає. Натисніть +, щоб створити."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "необов'язково"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Шаблон не знайдено."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Шаблон зміни"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Шаблони змін"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Ранкова зміна"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Денна зміна"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Вечірня зміна"

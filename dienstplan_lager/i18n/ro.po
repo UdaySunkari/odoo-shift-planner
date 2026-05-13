@@ -1,0 +1,688 @@
+# Romanian translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Planificare ture"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Zonă / Rol de planificare"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Tură planificată"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Copiază turele dintr-o săptămână în alta"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Nume"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Cod scurt"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Secvență"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Index culoare"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "Culoare HTML"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Este absență"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Descriere"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Angajat"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Zonă"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Zone"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Început"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Sfârșit"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Notă"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Stare"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Companie"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Schiță"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Publicat"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Zonă de tură implicită"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Zone permise"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Sfârșitul turei trebuie să fie după început."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "Culoarea HTML trebuie să fie un cod hex valid, ex. #3498db sau #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Azi"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Săptămâna anterioară"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Săptămâna următoare"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Deschide chioșc TV"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Înapoi la Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Caută angajat…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Zone · trage pentru a planifica"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Angajați · trage pentru a planifica"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Ore planificate"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Grad de ocupare"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Absențe"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Conflicte"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Țintă: %sh"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optim"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Scăzut"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Verifică!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Totul OK"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Zile"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Nicio tură săptămâna aceasta"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Trage un angajat din bara laterală pe o celulă pentru a crea o tură."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ tură nouă"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Total / zi"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Trage angajatul aici"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Adaugă mai întâi un angajat"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Nicio zonă disponibilă — creează zone mai întâi"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Tură creată"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Tură mutată"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Tură ștearsă"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Ora este incompletă"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Ștergi cu adevărat această tură?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Șterge"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Salvează"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Anulează"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Publică"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Setează ca schiță"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Retrage publicarea"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "De la"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Până la"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Absență"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Absent"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Toată ziua"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Eroare: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Eroare de comunicare"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Lun"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Mar"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Mie"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Joi"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Vin"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Sâm"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Dum"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "S %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Luni"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Marți"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Miercuri"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Joi"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Vineri"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Sâmbătă"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Duminică"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "S"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Niciun plan publicat pentru această săptămână."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Reîmprospătare automată la 5 min · Ultima actualizare:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "A apărut o eroare neașteptată. Contactați administratorul."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Nu aveți permisiunea de a efectua această acțiune."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Tură negăsită."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id și bereich_id sunt obligatorii."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Săptămâna sursă și cea destinație nu pot fi identice."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "Nu s-au găsit ture în săptămâna sursă."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Săptămână copiată"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d tură/ture copiate în săptămâna țintă."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Creează prima ta tură"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Planifică ture prin glisare în vizualizarea calendar sau copiază săptămâna anterioară cu expertul \"Copiază săptămâna anterioară\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Copiază"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Calendar clasic"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Copiază săptămâna anterioară"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Configurare"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Săptămâna sursă (luni)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Săptămâna țintă (luni)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Copiază doar turele publicate"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Șterge mai întâi turele existente în săptămâna țintă"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Atenție: toate turele existente din săptămâna țintă vor fi șterse permanent înainte de copiere."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Copiază toate turele din săptămâna sursă în cea țintă, păstrând aceeași zi și oră."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Caută ture"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Săptămâna aceasta"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Săptămâna viitoare"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Note despre această tură..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Adaugă tură"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Tură"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Adaugă angajat"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Adaugă zonă"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Creează"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Email de serviciu (opțional)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Zonă implicită (opțional)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Cod scurt (opțional)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Culoare"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Acesta este un tip de absență"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Selectează angajat"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Selectează zonă"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Selectează zi"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Numele este obligatoriu"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Numele este obligatoriu."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Angajat creat"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Zonă creată"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Zi"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Săptămână"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Lună"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "An"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Perioada anterioară"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Perioada următoare"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Caută angajați, ture, zone…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "ture"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Editează zona"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Zonă actualizată"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Zonă ștearsă"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Zonă arhivată (încă utilizată de ture existente)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Ștergi cu adevărat zona \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Zonă negăsită."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Absență negăsită."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Absențele provin din modulul HR Holidays. Ștergerea aici va elimina și înregistrarea din HR."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Ștergi cu adevărat absența pentru %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Absență ștearsă"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Obiectiv ore săptămânal"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Numărul țintă de ore pe săptămână. Folosit de planificator pentru bara de încărcare — normă întreagă = 40, parțial = 20, mini-job = 10 etc."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "ȘABLOANE · TRAGEȚI PENTRU PROGRAMARE"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Adaugă șablon nou"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Editează șablon"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Șablon creat"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Șablon actualizat"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Șablon șters"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Ștergi cu adevărat șablonul \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Fără șabloane încă. Apasă + pentru a crea unul."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "opțional"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Șablon negăsit."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Șablon de tură"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Șabloane de tură"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Tură de dimineață"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Tură de zi"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Tură de seară"

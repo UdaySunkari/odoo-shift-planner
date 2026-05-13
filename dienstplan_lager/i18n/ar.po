@@ -1,0 +1,688 @@
+# Arabic translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "جدولة المناوبات"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "منطقة / دور الجدولة"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "مناوبة مخطط لها"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "نسخ المناوبات من أسبوع إلى آخر"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "الاسم"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "رمز مختصر"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "فهرس اللون"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "لون HTML"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "غياب"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "الوصف"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "المنطقة"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "المناطق"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "البداية"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "النهاية"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "الحالة"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "الشركة"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "منشور"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "منطقة المناوبة الافتراضية"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "المناطق المسموح بها"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "يجب أن يكون نهاية المناوبة بعد بدايتها."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "يجب أن يكون لون HTML رمزًا سداسيًا صحيحًا، مثل #3498db أو #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "جارٍ التحميل…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "اليوم"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "الأسبوع السابق"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "الأسبوع التالي"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "فتح شاشة العرض"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "العودة إلى Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "البحث عن موظف…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "المناطق · اسحب للجدولة"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "الموظفون · اسحب للجدولة"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "الساعات المخططة"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "معدل الإشغال"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "حالات الغياب"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "تعارضات"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "الهدف: %s ساعة"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "مثالي"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "موافق"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "منخفض"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "تحقق!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "كل شيء على ما يرام"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "أيام"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "لا توجد مناوبات هذا الأسبوع"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "اسحب موظفًا من الشريط الجانبي إلى خلية لإنشاء مناوبة."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ مناوبة جديدة"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "المجموع / يوم"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "اسحب الموظف إلى هنا"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "أضف موظفًا أولًا"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "لا توجد مناطق — أنشئ المناطق أولًا"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "تم إنشاء المناوبة"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "تم نقل المناوبة"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "تم حذف المناوبة"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "الوقت غير مكتمل"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "هل تريد فعلًا حذف هذه المناوبة؟"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "حذف"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "حفظ"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "نشر"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "إلغاء النشر"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "من"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "إلى"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "غياب"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "غائب"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "إجازة"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "طوال اليوم"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "خطأ: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "خطأ في الاتصال"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "اث"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "ثل"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "أر"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "خم"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "جم"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "سب"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "أح"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "أسبوع %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "الإثنين"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "أسبوع"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "لا توجد خطة مناوبات منشورة لهذا الأسبوع."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "تحديث تلقائي كل 5 دقائق · آخر تحديث:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "حدث خطأ غير متوقع. يرجى الاتصال بالمسؤول."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "ليس لديك إذن لإجراء هذه العملية."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "المناوبة غير موجودة."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id و bereich_id مطلوبان."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "يجب ألا يكون الأسبوعان المصدر والهدف متطابقين."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "لم يتم العثور على مناوبات في الأسبوع المصدر."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "تم نسخ الأسبوع"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "تم نسخ %d مناوبة/مناوبات إلى الأسبوع الهدف."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "أنشئ مناوبتك الأولى"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "خطط للمناوبات بالسحب والإفلات في عرض التقويم أو انسخ الأسبوع السابق باستخدام معالج \"نسخ الأسبوع السابق\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "نسخ"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "التقويم الكلاسيكي"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "نسخ الأسبوع السابق"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "الإعداد"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "أسبوع المصدر (الإثنين)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "أسبوع الهدف (الإثنين)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "نسخ المناوبات المنشورة فقط"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "احذف المناوبات الموجودة في الأسبوع الهدف أولًا"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "تنبيه: ستُحذف جميع المناوبات الموجودة في الأسبوع الهدف نهائيًا قبل النسخ."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "ينسخ جميع المناوبات من الأسبوع المصدر إلى الهدف، مع الإبقاء على نفس اليوم والوقت."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "البحث عن مناوبات"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "هذا الأسبوع"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "الأسبوع القادم"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "ملاحظات حول هذه المناوبة..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "إضافة مناوبة"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "مناوبة"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "إضافة موظف"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "إضافة منطقة"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "البريد المهني (اختياري)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "المنطقة الافتراضية (اختياري)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "رمز مختصر (اختياري)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "اللون"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "هذا نوع غياب"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "اختر موظفًا"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "اختر منطقة"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "اختر يومًا"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "الاسم مطلوب"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "الاسم مطلوب."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "تم إنشاء الموظف"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "تم إنشاء المنطقة"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "يوم"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "أسبوع"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "شهر"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "سنة"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "الفترة السابقة"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "الفترة التالية"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "ابحث عن موظفين أو مناوبات أو مناطق…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "مناوبات"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "تعديل المنطقة"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "تم تحديث المنطقة"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "تم حذف المنطقة"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "تمت أرشفة المنطقة (لا تزال تُستخدم في مناوبات قائمة)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "هل تريد فعلًا حذف المنطقة \"%s\"؟"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "المنطقة غير موجودة."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "سجل الغياب غير موجود."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "حالات الغياب تأتي من وحدة HR Holidays. حذفها هنا يزيل أيضًا سجل الإجازة من الموارد البشرية."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "هل تريد فعلًا حذف غياب %s؟"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "تم حذف الغياب"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "هدف الساعات الأسبوعية"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "العدد المستهدف من الساعات في الأسبوع. يستخدمه المخطط لشريط عبء العمل — دوام كامل = 40، جزئي قد يكون 20، عمل صغير = 10 وهكذا."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "النماذج · اسحبها للجدولة"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "إضافة نموذج جديد"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "تعديل النموذج"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "تم إنشاء النموذج"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "تم تحديث النموذج"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "تم حذف النموذج"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "هل تريد فعلًا حذف النموذج \"%s\"؟"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "لا توجد نماذج بعد. اضغط + للإنشاء."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "اختياري"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "النموذج غير موجود."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "نموذج المناوبة"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "نماذج المناوبات"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "وردية صباحية"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "وردية نهارية"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "وردية مسائية"

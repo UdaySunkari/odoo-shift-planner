@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- PLANUNG TURBO – SPA shell v2 (glassmorphism, dark/light)     -->
+    <!-- ============================================================ -->
+    <template id="planung_template" name="Shift Planning Turbo">
+        <html t-att-lang="user_lang_short or 'en'" data-theme="dark">
+            <head>
+                <meta charset="utf-8"/>
+                <title>Shift Planning Turbo</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/app.css?v=4.1.5"/>
+            </head>
+            <body>
+                <script type="application/json" id="i18n-data">
+                    <t t-out="i18n_json"/>
+                </script>
+
+                <div class="ambient"></div>
+
+                <div class="app" id="app-root">
+                    <!-- ============= SIDEBAR ============= -->
+                    <aside class="sidebar glass" id="sidebar">
+                        <button class="sidebar-close" id="sidebar-close" type="button">×</button>
+                        <div class="sidebar-header">
+                            <a href="/odoo" class="brand" title="Back to Odoo">
+                                <span class="back-arrow">‹</span>
+                                <div class="brand-mark"></div>
+                                <div class="brand-text">
+                                    <span class="brand-name">Planung <span class="brand-accent">Odoo</span></span>
+                                    <span class="brand-sub">WORKFORCE SCHEDULER</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-tabs">
+                            <button class="active" data-tab="employees">People</button>
+                            <button data-tab="areas">Areas</button>
+                            <button data-tab="templates">Shifts</button>
+                        </div>
+                        <div class="sidebar-search-wrap">
+                            <span class="search-ico">🔍</span>
+                            <input id="sidebar-search" type="text" class="sidebar-search" placeholder="Search employees..."/>
+                        </div>
+                        <div class="sidebar-label">
+                            <span>DRAG TO SCHEDULE · <span id="sidebar-count">0</span></span>
+                            <button class="add-mini" id="btn-sidebar-add" type="button" title="Add new">+</button>
+                        </div>
+                        <div class="sidebar-list" id="sidebar-content"></div>
+                    </aside>
+
+                    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+                    <!-- ============= MAIN ============= -->
+                    <div class="main">
+                        <header class="topbar glass">
+                            <button class="hamburger" id="hamburger" type="button">
+                                <span></span><span></span><span></span>
+                            </button>
+                            <div class="week-nav">
+                                <button class="btn btn-icon" id="btn-prev" title="Previous">‹</button>
+                                <div class="week-pill">
+                                    <span class="kw-badge" id="kw-pill">CW</span>
+                                    <span id="week-title" class="week-title">Loading…</span>
+                                </div>
+                                <button class="btn btn-icon" id="btn-next" title="Next">›</button>
+                                <button class="btn btn-today" id="btn-today-reset" type="button">Today</button>
+                            </div>
+                            <div class="view-seg">
+                                <button data-view="day">Day</button>
+                                <button data-view="week" class="active">Week</button>
+                                <button data-view="month">Month</button>
+                            </div>
+                            <div class="topbar-search">
+                                <span class="search-ico">🔍</span>
+                                <input id="global-search" type="text" class="global-search-input" placeholder="Search people, shifts, areas..." data-i18n-placeholder="search_anything"/>
+                                <span class="search-kbd">⌘K</span>
+                                <button id="global-search-clear" class="global-search-clear" type="button">×</button>
+                                <div class="search-dropdown" id="search-dropdown"></div>
+                            </div>
+                            <div class="topbar-right">
+                                <button class="btn btn-icon" id="btn-refresh" title="Refresh">↻</button>
+                                <button class="btn btn-icon" id="btn-theme" title="Toggle theme">◑</button>
+                                <button class="btn btn-icon" id="btn-settings" type="button" title="Settings">⚙</button>
+                                <button class="btn" id="btn-tv" title="TV Kiosk">📺 TV</button>
+                            </div>
+                        </header>
+
+                        <div class="stats">
+                            <div class="stat-card stat-card-click glass" id="card-planned-hours" style="--stat-color:#3b82f6;" role="button" tabindex="0">
+                                <div class="stat-label" data-i18n="planned_hours">PLANNED HOURS</div>
+                                <div class="stat-value">
+                                    <span id="stat-hours">–</span>
+                                    <span class="stat-trend trend-neutral" id="stat-hours-trend">–</span>
+                                </div>
+                            </div>
+                            <div class="stat-card stat-card-click glass" id="card-absences" style="--stat-color:#f59e0b;" role="button" tabindex="0">
+                                <div class="stat-label" data-i18n="absences">ABSENCES</div>
+                                <div class="stat-value">
+                                    <span id="stat-leaves">0</span>
+                                    <span class="stat-trend trend-neutral" id="stat-leaves-trend">0 Days</span>
+                                </div>
+                            </div>
+                            <div class="stat-card stat-card-click glass" id="card-conflicts" style="--stat-color:#ec4899;" role="button" tabindex="0">
+                                <div class="stat-label" data-i18n="conflicts">CONFLICTS</div>
+                                <div class="stat-value">
+                                    <span id="stat-conflicts">0</span>
+                                    <span class="stat-trend trend-up" id="stat-conflicts-trend">–</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-wrap glass">
+                            <div class="grid-card" id="grid-card">
+                                <div class="loading">Loading…</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="popover-backdrop" class="popover-backdrop"></div>
+                <div id="popover" class="popover"></div>
+
+                <script src="/dienstplan_lager/static/src/js/app.js?v=4.1.9-onebutton"></script>
+            </body>
+        </html>
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- TV-KIOSK – authorized view                                   -->
+    <!-- ============================================================ -->
+    <template id="kiosk_template" name="Shift Planning Kiosk">
+        <html t-att-lang="user_lang_short or 'en'">
+            <head>
+                <meta charset="utf-8"/>
+                <title><t t-esc="lbl_title"/> – <t t-esc="lbl_cw"/> <t t-esc="kw"/></title>
+                <meta http-equiv="refresh" content="300"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/kiosk.css"/>
+            </head>
+            <body>
+                <div class="header">
+                    <h1><t t-esc="lbl_title"/></h1>
+                    <div class="kw-box">
+                        <div class="kw"><t t-esc="lbl_cw"/> <t t-esc="kw"/></div>
+                        <div class="range"><t t-esc="monday.strftime('%d.%m.')"/> – <t t-esc="sunday.strftime('%d.%m.%Y')"/></div>
+                    </div>
+                    <div class="clock" id="clock"/>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col class="col-emp"/>
+                        <t t-foreach="range(7)" t-as="i"><col class="col-day"/></t>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><t t-esc="lbl_employee"/></th>
+                            <t t-foreach="range(7)" t-as="i">
+                                <th t-att-class="'today' if days[i] == today else ''">
+                                    <t t-esc="day_names[i]"/>
+                                    <span class="date"><t t-esc="days[i].strftime('%d.%m.')"/></span>
+                                </th>
+                            </t>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-if="not grid">
+                            <tr>
+                                <td colspan="8" class="no-data">
+                                    <t t-esc="lbl_no_data"/>
+                                </td>
+                            </tr>
+                        </t>
+                        <t t-foreach="grid.values()" t-as="emp">
+                            <tr>
+                                <td class="employee-name"><t t-esc="emp['name']"/></td>
+                                <t t-foreach="range(7)" t-as="i">
+                                    <td t-att-class="'today-col' if days[i] == today else ''">
+                                        <t t-if="emp['days'][i]">
+                                            <t t-foreach="emp['days'][i]" t-as="s">
+                                                <span t-attf-class="shift #{'is-leave' if s['is_leave'] else ''}"
+                                                      t-attf-style="background-color: #{s['color']};">
+                                                    <t t-esc="s['code']"/>
+                                                    <t t-if="s['von']">
+                                                        <span class="time"><t t-esc="s['von']"/>–<t t-esc="s['bis']"/></span>
+                                                    </t>
+                                                </span>
+                                            </t>
+                                        </t>
+                                        <t t-else="">
+                                            <span class="empty">–</span>
+                                        </t>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <t t-esc="lbl_footer"/>
+                    <t t-esc="now.strftime('%d.%m.%Y %H:%M')"/>
+                </div>
+
+                <script>
+                    function updateClock() {
+                        var now = new Date();
+                        var h = String(now.getHours()).padStart(2, '0');
+                        var m = String(now.getMinutes()).padStart(2, '0');
+                        var s = String(now.getSeconds()).padStart(2, '0');
+                        var el = document.getElementById('clock');
+                        if (el) el.textContent = h + ':' + m + ':' + s;
+                    }
+                    setInterval(updateClock, 1000);
+                    updateClock();
+                </script>
+            </body>
+        </html>
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- MY SCHEDULE – read-only employee view                        -->
+    <!-- ============================================================ -->
+    <template id="my_schedule_template" name="My Schedule">
+        <html t-att-lang="user_lang_short or 'en'">
+            <head>
+                <meta charset="utf-8"/>
+                <title><t t-esc="lbl_title"/> – <t t-esc="lbl_cw"/> <t t-esc="kw"/></title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <script>
+                    // Apply saved theme BEFORE first paint to avoid flicker.
+                    // Shares the 'dienstplan_theme' key with the Shift Planner
+                    // so a user's choice carries across both pages.
+                    (function(){
+                        try {
+                            var t = localStorage.getItem('dienstplan_theme') || 'dark';
+                            document.documentElement.setAttribute('data-theme', t);
+                        } catch (e) {
+                            document.documentElement.setAttribute('data-theme', 'dark');
+                        }
+                    })();
+                </script>
+                <style>
+                    /* Light is the default; the [data-theme="dark"] block at
+                       the bottom overrides colors when dark mode is active.
+                       Palette matches the Shift Planner. */
+                    * { margin: 0; padding: 0; box-sizing: border-box; }
+                    body {
+                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                        background: #f3f4f8;
+                        color: #0f1320;
+                        min-height: 100vh;
+                    }
+                    .top-bar {
+                        display: flex; justify-content: space-between; align-items: center;
+                        padding: 16px 24px;
+                        background: rgba(255, 255, 255, 0.85);
+                        backdrop-filter: blur(8px);
+                        border-bottom: 1px solid rgba(15, 19, 32, 0.08);
+                    }
+                    .top-bar h1 { font-size: 1.2em; font-weight: 700; color: #0f1320; }
+                    .top-bar .emp-name { color: #ec4899; font-weight: 600; }
+                    .nav-btns { display: flex; gap: 6px; align-items: center; }
+                    .nav-btn {
+                        background: #ffffff; color: #0f1320;
+                        border: 1px solid rgba(15, 19, 32, 0.1);
+                        padding: 8px 16px; border-radius: 8px; cursor: pointer;
+                        font-size: 14px; text-decoration: none; font-weight: 600;
+                        transition: background 0.15s, border-color 0.15s;
+                    }
+                    .nav-btn:hover { background: #f3f4f8; border-color: rgba(15, 19, 32, 0.18); }
+                    .week-info {
+                        text-align: center; padding: 20px 24px 12px;
+                    }
+                    .week-info .kw { font-size: 0.85em; color: #6b7184; font-weight: 600;
+                                     text-transform: uppercase; letter-spacing: 1.5px; }
+                    .week-info .range { font-size: 1.1em; font-weight: 700; margin-top: 4px;
+                                        color: #0f1320; }
+                    .schedule {
+                        max-width: 700px; margin: 0 auto; padding: 12px 20px 40px;
+                        display: flex; flex-direction: column; gap: 8px;
+                    }
+                    .day-card {
+                        background: #ffffff;
+                        border: 1px solid rgba(15, 19, 32, 0.08);
+                        border-radius: 12px; padding: 16px;
+                        box-shadow: 0 1px 2px rgba(15, 19, 32, 0.03);
+                        transition: all 0.15s;
+                    }
+                    .day-card.is-today {
+                        border-color: #6366f1;
+                        background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.03));
+                        box-shadow: 0 2px 6px rgba(99, 102, 241, 0.12);
+                    }
+                    .day-header {
+                        display: flex; justify-content: space-between; align-items: center;
+                        margin-bottom: 10px;
+                    }
+                    .day-name { font-weight: 700; font-size: 0.95em; color: #0f1320; }
+                    .day-card.is-today .day-name { color: #4f46e5; }
+                    .day-date { font-size: 0.82em; color: #6b7184; }
+                    .today-badge {
+                        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                        color: #fff; font-size: 0.7em; font-weight: 700;
+                        padding: 3px 10px; border-radius: 99px;
+                        text-transform: uppercase; letter-spacing: 1px;
+                    }
+                    .shift-item {
+                        display: flex; align-items: center; gap: 12px;
+                        padding: 10px 14px; border-radius: 9px;
+                        margin-bottom: 6px; border: 1px solid rgba(15, 19, 32, 0.06);
+                    }
+                    .shift-color {
+                        width: 4px; height: 36px; border-radius: 3px; flex-shrink: 0;
+                    }
+                    .shift-info { flex: 1; }
+                    .shift-area { font-weight: 700; font-size: 0.9em; color: #0f1320; }
+                    .shift-time {
+                        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                        font-size: 0.82em; color: #3a4256; margin-top: 2px;
+                    }
+                    .shift-off {
+                        background: rgba(156, 163, 175, 0.1);
+                        border-color: rgba(156, 163, 175, 0.25);
+                    }
+                    .shift-off .shift-area { color: #6b7184; }
+                    .no-shifts {
+                        color: #9ca3af; font-size: 0.85em; font-style: italic;
+                        padding: 4px 0;
+                    }
+                    .no-employee {
+                        text-align: center; padding: 60px 30px;
+                        color: #3a4256; font-size: 1em;
+                    }
+                    .no-employee .icon { font-size: 3em; margin-bottom: 16px; }
+                    .back-link {
+                        display: inline-block; margin-top: 20px;
+                        color: #4f46e5; text-decoration: none; font-weight: 600;
+                    }
+                    .back-link:hover { text-decoration: underline; }
+
+                    /* ---------- Dark mode overrides ---------- */
+                    [data-theme="dark"] body {
+                        background: #0a0a0f;
+                        color: #f3f4f6;
+                    }
+                    [data-theme="dark"] .top-bar {
+                        background: rgba(15, 15, 22, 0.8);
+                        border-bottom-color: rgba(255, 255, 255, 0.06);
+                    }
+                    [data-theme="dark"] .top-bar h1 { color: #f3f4f6; }
+                    [data-theme="dark"] .nav-btn {
+                        background: #334155; color: #fff;
+                        border-color: transparent;
+                    }
+                    [data-theme="dark"] .nav-btn:hover {
+                        background: #475569; border-color: transparent;
+                    }
+                    [data-theme="dark"] .week-info .kw { color: #9ca3af; }
+                    [data-theme="dark"] .week-info .range { color: #f3f4f6; }
+                    [data-theme="dark"] .day-card {
+                        background: rgba(20, 20, 30, 0.6);
+                        border-color: rgba(255, 255, 255, 0.06);
+                        box-shadow: none;
+                    }
+                    [data-theme="dark"] .day-card.is-today {
+                        background: rgba(99, 102, 241, 0.08);
+                        box-shadow: none;
+                    }
+                    [data-theme="dark"] .day-name { color: #f3f4f6; }
+                    [data-theme="dark"] .day-card.is-today .day-name { color: #a78bfa; }
+                    [data-theme="dark"] .day-date { color: #9ca3af; }
+                    [data-theme="dark"] .shift-item { border-color: rgba(255, 255, 255, 0.08); }
+                    [data-theme="dark"] .shift-area { color: #f3f4f6; }
+                    [data-theme="dark"] .shift-time { color: rgba(255, 255, 255, 0.7); }
+                    [data-theme="dark"] .shift-off {
+                        background: rgba(156, 163, 175, 0.12);
+                        border-color: rgba(156, 163, 175, 0.2);
+                    }
+                    [data-theme="dark"] .shift-off .shift-area { color: #9ca3af; }
+                    [data-theme="dark"] .no-shifts { color: #6b7280; }
+                    [data-theme="dark"] .no-employee { color: #9ca3af; }
+                    [data-theme="dark"] .back-link { color: #6366f1; }
+                    @media print {
+                        body { background: #fff !important; color: #000 !important; }
+                        .top-bar { background: #fff !important; border-color: #ccc !important; }
+                        .top-bar h1, .top-bar .emp-name { color: #000 !important; }
+                        .nav-btns { display: none !important; }
+                        .day-card { background: #fff !important; border-color: #ccc !important; }
+                        .day-card.is-today { border-color: #333 !important; }
+                        .day-name, .day-date { color: #000 !important; }
+                        .shift-item { border-color: #ccc !important; }
+                        .shift-area { color: #000 !important; }
+                        .shift-time { color: #333 !important; }
+                        .shift-item { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="top-bar">
+                    <div>
+                        <h1><t t-esc="lbl_title"/></h1>
+                        <t t-if="employee">
+                            <div class="emp-name"><t t-esc="employee_name"/></div>
+                        </t>
+                    </div>
+                    <div class="nav-btns">
+                        <button class="nav-btn" id="btn-theme" type="button" title="Toggle theme">◑</button>
+                        <a class="nav-btn" t-attf-href="/dienstplan/my-schedule?offset=#{offset - 1}">‹</a>
+                        <a class="nav-btn" href="/dienstplan/my-schedule?offset=0">Today</a>
+                        <a class="nav-btn" t-attf-href="/dienstplan/my-schedule?offset=#{offset + 1}">›</a>
+                    </div>
+                </div>
+
+                <div class="week-info">
+                    <div class="kw"><t t-esc="lbl_cw"/> <t t-esc="kw"/></div>
+                    <div class="range"><t t-esc="monday.strftime('%d.%m.')"/> – <t t-esc="sunday.strftime('%d.%m.%Y')"/></div>
+                </div>
+
+                <t t-if="not employee">
+                    <div class="no-employee">
+                        <div class="icon">👤</div>
+                        <p><t t-esc="lbl_no_employee"/></p>
+                        <a class="back-link" href="/odoo">← Back to Odoo</a>
+                    </div>
+                </t>
+
+                <t t-if="employee">
+                    <div class="schedule">
+                        <t t-foreach="days_schedule" t-as="day">
+                            <div t-attf-class="day-card #{'is-today' if day['is_today'] else ''}">
+                                <div class="day-header">
+                                    <div>
+                                        <div class="day-name"><t t-esc="day['name']"/></div>
+                                        <div class="day-date"><t t-esc="day['date'].strftime('%d.%m.%Y')"/></div>
+                                    </div>
+                                    <t t-if="day['is_today']">
+                                        <span class="today-badge">Today</span>
+                                    </t>
+                                </div>
+
+                                <t t-if="day['leaves']">
+                                    <div class="shift-item shift-off">
+                                        <div class="shift-color" style="background: #95a5a6;"></div>
+                                        <div class="shift-info">
+                                            <div class="shift-area"><t t-esc="lbl_off"/></div>
+                                        </div>
+                                    </div>
+                                </t>
+
+                                <t t-foreach="day['shifts']" t-as="s">
+                                    <div class="shift-item" t-attf-style="background: linear-gradient(135deg, #{s['color']}22, #{s['color']}08);">
+                                        <div class="shift-color" t-attf-style="background: #{s['color']};"></div>
+                                        <div class="shift-info">
+                                            <div class="shift-area"><t t-esc="s['code']"/></div>
+                                            <div class="shift-time"><t t-esc="s['von']"/> – <t t-esc="s['bis']"/></div>
+                                        </div>
+                                    </div>
+                                </t>
+
+                                <t t-if="not day['shifts'] and not day['leaves']">
+                                    <div class="no-shifts"><t t-esc="lbl_no_shifts"/></div>
+                                </t>
+                            </div>
+                        </t>
+                    </div>
+                </t>
+                <script>
+                    // Theme toggle: flips data-theme on &lt;html&gt; and persists
+                    // the choice in the same localStorage key the planner uses.
+                    (function(){
+                        var btn = document.getElementById('btn-theme');
+                        if (!btn) return;
+                        btn.addEventListener('click', function(){
+                            var current = document.documentElement.getAttribute('data-theme') || 'dark';
+                            var next = current === 'dark' ? 'light' : 'dark';
+                            document.documentElement.setAttribute('data-theme', next);
+                            try { localStorage.setItem('dienstplan_theme', next); } catch (e) {}
+                        });
+                    })();
+                </script>
+            </body>
+        </html>
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- PRINT VIEW – authenticated, print-friendly                   -->
+    <!-- ============================================================ -->
+    <template id="print_template" name="Shift Planning Print View">
+        <html t-att-lang="user_lang_short or 'en'">
+            <head>
+                <meta charset="utf-8"/>
+                <title><t t-esc="lbl_title"/> – <t t-esc="lbl_cw"/> <t t-esc="kw"/></title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/kiosk.css"/>
+                <style>
+                    .print-bar {
+                        display: flex; justify-content: space-between; align-items: center;
+                        padding: 12px 24px; background: #1e293b;
+                    }
+                    .print-bar .nav-btn {
+                        background: #334155; color: #fff; border: none;
+                        padding: 8px 16px; border-radius: 6px; cursor: pointer;
+                        font-size: 14px; text-decoration: none;
+                    }
+                    .print-bar .nav-btn:hover { background: #475569; }
+                    .print-bar .print-btn {
+                        background: #6366f1; color: #fff; border: none;
+                        padding: 8px 20px; border-radius: 6px; cursor: pointer;
+                        font-size: 14px; font-weight: 600;
+                    }
+                    .print-bar .print-btn:hover { background: #4f46e5; }
+                    @media print {
+                        /* Force landscape A4. Without this Sat/Sun get cut off. */
+                        @page { size: A4 landscape; margin: 10mm; }
+                        html, body {
+                            width: auto !important; height: auto !important;
+                            margin: 0 !important; padding: 0 !important;
+                            background: #fff !important; color: #000 !important;
+                            font-size: 12px;
+                        }
+                        /* Hide the screen-only navigation bar */
+                        .print-bar { display: none !important; }
+                        /* Hide the kiosk auto-refresh script container if present */
+                        script, .clock { display: none !important; }
+
+                        .header { background: #fff !important; color: #000 !important;
+                                  padding: 0 !important; margin: 0 0 4mm 0 !important;
+                                  display: flex; justify-content: space-between; align-items: center;
+                                  border-bottom: 1px solid #ccc; padding-bottom: 3mm !important; }
+                        .header h1 { color: #000 !important; font-size: 18px !important;
+                                     margin: 0 !important; font-weight: 700; }
+                        .kw-box { background: #f1f5f9 !important; color: #000 !important;
+                                  padding: 6px 12px !important; border-radius: 4px;
+                                  text-align: right; }
+                        .kw-box .kw { color: #000 !important; font-size: 13px !important;
+                                      font-weight: 700; display: block; }
+                        .kw-box .range { color: #444 !important; font-size: 11px !important;
+                                         display: block; }
+
+                        /* Table: full width of the page, fixed layout so the
+                           first column doesn't push the day columns off-screen. */
+                        table { border-collapse: collapse; width: 100%;
+                                table-layout: fixed; margin: 0 !important; }
+                        col.col-emp  { width: 18%; }
+                        col.col-day  { width: 11.71%; } /* (100-18)/7 */
+
+                        th, td { border: 1px solid #999 !important; padding: 5px 6px !important;
+                                 color: #000 !important; background: #fff !important;
+                                 font-size: 11px !important; vertical-align: top !important;
+                                 word-wrap: break-word; overflow-wrap: break-word; }
+                        th { background: #f1f5f9 !important; font-size: 11px !important;
+                             text-align: center !important; font-weight: 600; }
+                        th .date { display: block; font-weight: 400; font-size: 9.5px !important;
+                                   color: #555 !important; margin-top: 1px; }
+
+                        td.employee-name { font-weight: 600; font-size: 11.5px !important;
+                                           background: #fafbfc !important; }
+
+                        .shift { color: #fff !important; print-color-adjust: exact;
+                                 -webkit-print-color-adjust: exact;
+                                 display: block !important; padding: 3px 5px !important;
+                                 margin: 1px 0 !important; border-radius: 3px !important;
+                                 font-size: 10px !important; line-height: 1.3 !important;
+                                 font-weight: 600; }
+                        .shift .time { display: block; font-size: 9px !important;
+                                       font-weight: 500; opacity: 0.95; margin-top: 1px; }
+
+                        .footer { color: #666 !important; font-size: 9px !important;
+                                  padding: 3mm 0 0 !important; margin: 0 !important;
+                                  border-top: 1px solid #eee; }
+                        /* Page breaks */
+                        tr { page-break-inside: avoid; }
+                        thead { display: table-header-group; } /* repeat header on each page */
+                        /* Prevent stray elements from forcing a second page */
+                        body > *:last-child { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="print-bar">
+                    <div>
+                        <a class="nav-btn" t-attf-href="/dienstplan/print?offset=#{offset - 1}">‹ </a>
+                        <a class="nav-btn" href="/dienstplan/print?offset=0" style="margin:0 4px;">Today</a>
+                        <a class="nav-btn" t-attf-href="/dienstplan/print?offset=#{offset + 1}"> ›</a>
+                    </div>
+                    <button class="print-btn" onclick="window.print()">🖨 <t t-esc="lbl_print"/></button>
+                </div>
+
+                <div class="header">
+                    <h1><t t-esc="lbl_title"/></h1>
+                    <div class="kw-box">
+                        <div class="kw"><t t-esc="lbl_cw"/> <t t-esc="kw"/></div>
+                        <div class="range"><t t-esc="monday.strftime('%d.%m.')"/> – <t t-esc="sunday.strftime('%d.%m.%Y')"/></div>
+                    </div>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col class="col-emp"/>
+                        <t t-foreach="range(7)" t-as="i"><col class="col-day"/></t>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><t t-esc="lbl_employee"/></th>
+                            <t t-foreach="range(7)" t-as="i">
+                                <th t-att-class="'today' if days[i] == today else ''">
+                                    <t t-esc="day_names[i]"/>
+                                    <span class="date"><t t-esc="days[i].strftime('%d.%m.')"/></span>
+                                </th>
+                            </t>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-if="not grid">
+                            <tr><td colspan="8" class="no-data"><t t-esc="lbl_no_data"/></td></tr>
+                        </t>
+                        <t t-foreach="grid.values()" t-as="emp">
+                            <tr>
+                                <td class="employee-name"><t t-esc="emp['name']"/></td>
+                                <t t-foreach="range(7)" t-as="i">
+                                    <td t-att-class="'today-col' if days[i] == today else ''">
+                                        <t t-if="emp['days'][i]">
+                                            <t t-foreach="emp['days'][i]" t-as="s">
+                                                <span t-attf-class="shift #{'is-leave' if s['is_leave'] else ''}"
+                                                      t-attf-style="background-color: #{s['color']};">
+                                                    <t t-esc="s['code']"/>
+                                                    <t t-if="s['von']">
+                                                        <span class="time"><t t-esc="s['von']"/>–<t t-esc="s['bis']"/></span>
+                                                    </t>
+                                                </span>
+                                            </t>
+                                        </t>
+                                        <t t-else=""><span class="empty">–</span></t>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <t t-esc="lbl_footer"/> <t t-esc="now.strftime('%d.%m.%Y %H:%M')"/>
+                </div>
+            </body>
+        </html>
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- TV-KIOSK – disabled (no token configured)                    -->
+    <!-- ============================================================ -->
+    <template id="kiosk_disabled_template" name="Shift Planning Kiosk Disabled">
+        <html lang="en">
+            <head>
+                <meta charset="utf-8"/>
+                <title>Kiosk disabled</title>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/kiosk.css"/>
+            </head>
+            <body class="kiosk-info">
+                <div class="kiosk-info-box">
+                    <h1>📺 TV Kiosk is disabled</h1>
+                    <p>An administrator must configure an access token before
+                       the public kiosk can be displayed.</p>
+                    <p class="muted">Set the system parameter
+                       <code>dienstplan_lager.kiosk_token</code> to a non-empty
+                       random string, then open
+                       <code>/dienstplan/kiosk?token=YOUR_TOKEN</code>.</p>
+                </div>
+            </body>
+        </html>
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- TV-KIOSK – unauthorized (wrong / missing token)              -->
+    <!-- ============================================================ -->
+    <template id="kiosk_unauthorized_template" name="Shift Planning Kiosk Unauthorized">
+        <html lang="en">
+            <head>
+                <meta charset="utf-8"/>
+                <title>Unauthorized</title>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/kiosk.css"/>
+            </head>
+            <body class="kiosk-info">
+                <div class="kiosk-info-box">
+                    <h1>🔒 Access denied</h1>
+                    <p>This kiosk page requires a valid access token.</p>
+                </div>
+            </body>
+        </html>
+    </template>
+
+</odoo>

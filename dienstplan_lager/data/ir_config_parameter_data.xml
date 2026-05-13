@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        We do NOT auto-create a kiosk token here.
+
+        Reason: a default token shipped in source code would be public and
+        defeat the purpose. The kiosk_disabled_template will be shown until
+        the administrator sets the parameter manually.
+
+        Documentation in README.md explains how to generate a strong token,
+        e.g. via:
+
+            python -c "import secrets; print(secrets.token_urlsafe(32))"
+
+        and then store it under
+            Settings → Technical → Parameters → System Parameters
+            Key:   dienstplan_lager.kiosk_token
+            Value: <random-token>
+    -->
+    <data noupdate="1">
+        <!-- Empty placeholder so the file is valid; nothing is created. -->
+    </data>
+</odoo>

@@ -1,0 +1,688 @@
+# Slovak translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Slovak\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Plánovanie zmien"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Oblasť / Rola plánovania"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Plánovaná zmena"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Kopírovať zmeny z jedného týždňa do druhého"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Názov"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Krátky kód"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Poradie"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Index farby"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML farba"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Je neprítomnosť"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Popis"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Zamestnanec"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Oblasť"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Oblasti"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Začiatok"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Koniec"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Poznámka"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Stav"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Spoločnosť"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Návrh"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Publikované"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Predvolená oblasť zmeny"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Povolené oblasti"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Koniec zmeny musí byť po jej začiatku."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML farba musí byť platný hex kód, napr. #3498db alebo #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Načítava sa…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Dnes"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Predchádzajúci týždeň"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Nasledujúci týždeň"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Otvoriť TV kiosk"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Späť do Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Hľadať zamestnanca…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Oblasti · presuňte pre plánovanie"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Zamestnanci · presuňte pre plánovanie"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Plánované hodiny"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Miera obsadenosti"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Neprítomnosti"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Konflikty"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Cieľ: %sh"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optimálne"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Nízka"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Skontrolovať!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Všetko v poriadku"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Dní"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Tento týždeň bez zmien"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Presuňte zamestnanca z bočného panela na bunku pre vytvorenie zmeny."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ nová zmena"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Súčet / deň"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Presuňte zamestnanca sem"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Najprv pridajte zamestnanca"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Žiadna oblasť — najprv vytvorte oblasti"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Zmena vytvorená"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Zmena presunutá"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Zmena zmazaná"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Čas je neúplný"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Naozaj zmazať túto zmenu?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Zmazať"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Uložiť"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Publikovať"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Nastaviť ako návrh"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Zrušiť publikovanie"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Od"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Do"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Neprítomnosť"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Neprítomný"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Celý deň"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Chyba: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Chyba komunikácie"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Po"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Ut"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "St"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Št"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Pi"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "So"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Ne"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "Týž. %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Pondelok"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Utorok"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Streda"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Štvrtok"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Piatok"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Sobota"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Nedeľa"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Týž."
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Tento týždeň nebol zverejnený plán zmien."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Automatické obnovenie každých 5 min · Naposledy aktualizované:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Vyskytla sa neočakávaná chyba. Kontaktujte svojho administrátora."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Nemáte oprávnenie vykonať túto akciu."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Zmena sa nenašla."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id a bereich_id sú povinné."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Zdrojový a cieľový týždeň nesmú byť rovnaké."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "V zdrojovom týždni neboli nájdené žiadne zmeny."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Týždeň skopírovaný"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "Skopírovaných %d zmien do cieľového týždňa."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Vytvorte svoju prvú zmenu"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Plánujte zmeny presunutím v kalendári alebo skopírujte predchádzajúci týždeň sprievodcom \"Kopírovať predchádzajúci týždeň\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Kopírovať"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Klasický kalendár"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Kopírovať predchádzajúci týždeň"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Nastavenie"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Zdrojový týždeň (pondelok)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Cieľový týždeň (pondelok)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Kopírovať len publikované zmeny"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Najprv zmazať existujúce zmeny v cieľovom týždni"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Pozor: všetky existujúce zmeny cieľového týždňa budú pred kopírovaním trvalo zmazané."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Skopíruje všetky zmeny zo zdrojového týždňa do cieľového so zachovaním dňa v týždni a času."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Hľadať zmeny"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Tento týždeň"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Budúci týždeň"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Poznámky k tejto zmene..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Pridať zmenu"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Zmena"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Pridať zamestnanca"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Pridať oblasť"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Vytvoriť"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Pracovný email (voliteľné)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Predvolená oblasť (voliteľné)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Krátky kód (voliteľné)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Farba"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Toto je typ neprítomnosti"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Vybrať zamestnanca"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Vybrať oblasť"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Vybrať deň"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Názov je povinný"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Názov je povinný."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Zamestnanec vytvorený"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Oblasť vytvorená"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Deň"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Týždeň"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Mesiac"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Rok"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Predchádzajúce obdobie"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Ďalšie obdobie"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Hľadať zamestnancov, zmeny, oblasti…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "zmien"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Upraviť oblasť"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Oblasť aktualizovaná"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Oblasť zmazaná"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Oblasť archivovaná (stále používaná existujúcimi zmenami)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Naozaj zmazať oblasť \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Oblasť sa nenašla."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Neprítomnosť sa nenašla."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Neprítomnosti pochádzajú z modulu HR Holidays. Zmazanie tu odstráni aj záznam z HR."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Naozaj zmazať neprítomnosť pre %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Neprítomnosť zmazaná"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Cieľový počet hodín týždenne"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Cieľový počet hodín týždenne. Plánovač ho používa na pruh vyťaženia — plný úväzok = 40, čiastočný = 20, mini-job = 10 atď."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "ŠABLÓNY · PRETIAHNUTÍM NAPLÁNUJTE"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Pridať novú šablónu"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Upraviť šablónu"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Šablóna vytvorená"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Šablóna aktualizovaná"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Šablóna zmazaná"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Naozaj zmazať šablónu \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Zatiaľ žiadne šablóny. Kliknite + pre vytvorenie."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "voliteľné"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Šablóna sa nenašla."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Šablóna zmeny"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Šablóny zmien"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Ranná zmena"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Denná zmena"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Popoludňajšia zmena"

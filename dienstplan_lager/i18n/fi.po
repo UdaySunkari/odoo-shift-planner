@@ -1,0 +1,688 @@
+# Finnish translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Vuorosuunnittelu"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Vuoroalue / Rooli"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Suunniteltu vuoro"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Kopioi vuorot viikolta toiselle"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Nimi"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Lyhytkoodi"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Järjestys"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Väri-indeksi"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML-väri"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "On poissaolo"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Työntekijä"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Alue"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Alueet"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Alku"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Loppu"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Huomautus"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Tila"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Yritys"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Luonnos"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Julkaistu"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Oletusvuoroalue"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Sallitut alueet"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Vuoron loppu täytyy olla alkamisen jälkeen."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML-värin täytyy olla kelvollinen hex-koodi, esim. #3498db tai #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Ladataan…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Tänään"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Edellinen viikko"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Seuraava viikko"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Avaa TV-näyttö"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Takaisin Odooseen"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Hae työntekijää…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Alueet · vedä aikatauluttaaksesi"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Työntekijät · vedä aikatauluttaaksesi"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Suunnitellut tunnit"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Käyttöaste"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Poissaolot"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Ristiriidat"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Tavoite: %st"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optimaalinen"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Matala"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Tarkista!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Kaikki kunnossa"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Päivää"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Ei vuoroja tällä viikolla"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Vedä työntekijä sivupalkista soluun luodaksesi vuoron."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ uusi vuoro"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Yhteensä / päivä"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Vedä työntekijä tähän"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Lisää ensin työntekijä"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Ei alueita — luo ensin alueita"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Vuoro luotu"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Vuoro siirretty"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Vuoro poistettu"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Aika on puutteellinen"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Poistetaanko tämä vuoro?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Poista"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Tallenna"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Julkaise"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Aseta luonnokseksi"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Peruuta julkaisu"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Alkaen"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Asti"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Poissaolo"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Poissa"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Koko päivä"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Virhe: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Yhteysvirhe"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Ma"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Ti"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Ke"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "To"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Pe"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "La"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Su"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "Vk %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Maanantai"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Tiistai"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Keskiviikko"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Torstai"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Perjantai"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Lauantai"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Sunnuntai"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Vk"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Tällä viikolla ei ole julkaistua vuorosuunnitelmaa."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Automaattipäivitys 5 min välein · Viimeksi päivitetty:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Odottamaton virhe. Ota yhteyttä järjestelmänvalvojaan."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Sinulla ei ole oikeuksia tähän toimintoon."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Vuoroa ei löytynyt."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id ja bereich_id ovat pakollisia."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Lähde- ja kohdeviikko eivät saa olla samat."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "Lähdeviikolta ei löytynyt vuoroja."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Viikko kopioitu"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d vuoro(a) kopioitu kohdeviikolle."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Luo ensimmäinen vuorosi"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Suunnittele vuoroja vetämällä kalenterinäkymässä tai kopioi edellinen viikko \"Kopioi edellinen viikko\" -ohjatulla toiminnolla."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Kopioi"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Klassinen kalenteri"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Kopioi edellinen viikko"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Asetukset"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Lähdeviikko (maanantai)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Kohdeviikko (maanantai)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Kopioi vain julkaistut vuorot"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Poista ensin kohdeviikon olemassa olevat vuorot"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Huomio: kaikki kohdeviikon olemassa olevat vuorot poistetaan pysyvästi ennen kopiointia."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Kopioi kaikki vuorot lähdeviikolta kohdeviikolle samana viikonpäivänä ja samaan aikaan."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Hae vuoroja"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Tämä viikko"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Ensi viikko"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Muistiinpanoja tästä vuorosta..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Lisää vuoro"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Vuoro"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Lisää työntekijä"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Lisää alue"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Luo"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Työsähköposti (valinnainen)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Oletusalue (valinnainen)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Lyhytkoodi (valinnainen)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Väri"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Tämä on poissaolotyyppi"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Valitse työntekijä"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Valitse alue"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Valitse päivä"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Nimi on pakollinen"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Nimi on pakollinen."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Työntekijä luotu"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Alue luotu"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Päivä"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Viikko"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Kuukausi"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Vuosi"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Edellinen jakso"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Seuraava jakso"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Hae työntekijöitä, vuoroja, alueita…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "vuoroa"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Muokkaa aluetta"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Alue päivitetty"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Alue poistettu"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Alue arkistoitu (käytössä olemassa olevissa vuoroissa)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Poistetaanko alue \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Aluetta ei löytynyt."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Poissaoloa ei löytynyt."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Poissaolot tulevat HR Holidays -moduulista. Täältä poistaminen poistaa myös lomatietueen HR:stä."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Poistetaanko poissaolo henkilölle %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Poissaolo poistettu"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Viikkotuntitavoite"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Tavoitetuntimäärä viikossa. Suunnittelija laskee työtaakkapalkin tämän mukaan — kokopäivä = 40, osa-aika = 20, minityö = 10 jne."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "MALLIT · VEDÄ AIKATAULUUN"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Lisää uusi malli"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Muokkaa mallia"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Malli luotu"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Malli päivitetty"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Malli poistettu"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Poistetaanko malli \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Ei vielä malleja. Luo uusi painamalla +."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "valinnainen"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Mallia ei löytynyt."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Vuoromalli"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Vuoromallit"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Aamuvuoro"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Päivävuoro"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Iltavuoro"

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_dienstplan" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.dienstplan</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <div class="app_settings_block"
+                     data-string="Shift Planning"
+                     string="Shift Planning"
+                     data-key="dienstplan_lager">
+
+                    <!-- ====== Default Shift Times ====== -->
+                    <h2>Default Shift Times</h2>
+                    <div class="text-muted mb-3">
+                        Used when creating shifts via drag &amp; drop or the + button.
+                    </div>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_default_start_hour" string="Shift start time"/>
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label for="dienstplan_default_start_hour" class="col-lg-3"/>
+                                        <field name="dienstplan_default_start_hour" class="col-lg-1"/>
+                                        <label for="dienstplan_default_start_minute" class="col-lg-1" string=":"/>
+                                        <field name="dienstplan_default_start_minute" class="col-lg-1"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_default_end_hour" string="Shift end time"/>
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label for="dienstplan_default_end_hour" class="col-lg-3"/>
+                                        <field name="dienstplan_default_end_hour" class="col-lg-1"/>
+                                        <label for="dienstplan_default_end_minute" class="col-lg-1" string=":"/>
+                                        <field name="dienstplan_default_end_minute" class="col-lg-1"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== Employee Defaults ====== -->
+                    <h2>Employee Defaults</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_default_weekly_hours" string="Default weekly hours target"/>
+                                <div class="text-muted">
+                                    Used for occupancy rate calculation. Individual employees can override this.
+                                </div>
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label for="dienstplan_default_weekly_hours" class="col-lg-3"/>
+                                        <field name="dienstplan_default_weekly_hours" class="col-lg-2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== Display ====== -->
+                    <h2>Display</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_show_weekends" string="Show weekends"/>
+                                <div class="text-muted">
+                                    Show Saturday and Sunday columns in the weekly planner grid.
+                                </div>
+                                <div class="content-group mt8">
+                                    <field name="dienstplan_show_weekends"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== Automation ====== -->
+                    <h2>Automation</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_auto_publish" string="Auto-publish new shifts"/>
+                                <div class="text-muted">
+                                    New shifts are created as "Published" instead of "Draft".
+                                    Useful if you don't need a review step.
+                                </div>
+                                <div class="content-group mt8">
+                                    <field name="dienstplan_auto_publish"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_notify_on_publish" string="Email on publish"/>
+                                <div class="text-muted">
+                                    Send an email to employees when their shifts are published.
+                                </div>
+                                <div class="content-group mt8">
+                                    <field name="dienstplan_notify_on_publish"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== TV Kiosk ====== -->
+                    <h2>TV Kiosk</h2>
+                    <div class="text-muted mb-3">
+                        The kiosk is a public auto-refreshing display for shop floors and break rooms.
+                        Set a token to enable it. Leave empty to keep it disabled.
+                    </div>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_kiosk_token" string="Access token"/>
+                                <div class="text-muted">
+                                    Secret token for the kiosk URL. Treat it like a password.
+                                </div>
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <field name="dienstplan_kiosk_token" class="col-lg-6" placeholder="Leave empty to disable"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="dienstplan_kiosk_refresh" string="Auto-refresh interval"/>
+                                <div class="text-muted">
+                                    How often the kiosk reloads data (in seconds). Default: 120.
+                                </div>
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label for="dienstplan_kiosk_refresh" class="col-lg-3"/>
+                                        <field name="dienstplan_kiosk_refresh" class="col-lg-2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

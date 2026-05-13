@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_dienstplan_vorlage_list" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.vorlage.list</field>
+        <field name="model">dienstplan.schicht.vorlage</field>
+        <field name="arch" type="xml">
+            <list string="Shift Templates" editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="bereich_id"/>
+                <field name="start_hour"/>
+                <field name="start_minute"/>
+                <field name="end_hour"/>
+                <field name="end_minute"/>
+                <field name="duration_hours" widget="float_time"/>
+                <field name="html_color" widget="char"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_dienstplan_vorlage_form" model="ir.ui.view">
+        <field name="name">dienstplan.schicht.vorlage.form</field>
+        <field name="model">dienstplan.schicht.vorlage</field>
+        <field name="arch" type="xml">
+            <form string="Shift Template">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived"
+                            bg_color="text-bg-danger" invisible="active"/>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="bereich_id"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                            <field name="html_color"
+                                   placeholder="#3498db (optional)"/>
+                            <field name="sequence"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group>
+                            <label for="start_hour" string="Start"/>
+                            <div>
+                                <field name="start_hour" class="oe_inline" style="width:50px"/>
+                                <span> : </span>
+                                <field name="start_minute" class="oe_inline" style="width:50px"/>
+                            </div>
+                            <label for="end_hour" string="End"/>
+                            <div>
+                                <field name="end_hour" class="oe_inline" style="width:50px"/>
+                                <span> : </span>
+                                <field name="end_minute" class="oe_inline" style="width:50px"/>
+                            </div>
+                            <field name="duration_hours" widget="float_time"/>
+                        </group>
+                    </group>
+                    <group string="Description">
+                        <field name="notiz" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dienstplan_vorlage" model="ir.actions.act_window">
+        <field name="name">Shift Templates</field>
+        <field name="res_model">dienstplan.schicht.vorlage</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first shift template
+            </p>
+            <p>
+                Templates speed up scheduling — define common shifts
+                (Early / Mid / Late etc.) once, then drag the template
+                onto a planner cell to instantly create a shift.
+            </p>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,688 @@
+# Hungarian translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Műszaktervezés"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Műszakterület / Szerep"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Tervezett műszak"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Műszakok másolása egyik hétről a másikra"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Név"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Rövid kód"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Sorrend"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Szín indexe"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML szín"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Távollét"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Leírás"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Munkavállaló"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Terület"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Területek"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Kezdet"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Vég"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Megjegyzés"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Állapot"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Vállalat"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Piszkozat"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Közzétéve"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Alapértelmezett műszakterület"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Engedélyezett területek"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "A műszak végének a kezdés után kell lennie."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "A HTML szín érvényes hex kód kell legyen, pl. #3498db vagy #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Betöltés…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Ma"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Előző hét"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Következő hét"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "TV kioszk megnyitása"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Vissza az Odoo-ba"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Munkavállaló keresése…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Területek · húzd a tervezéshez"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Munkavállalók · húzd a tervezéshez"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Tervezett órák"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Kihasználtság"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Távollétek"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Ütközések"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Cél: %só"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optimális"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "Rendben"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Alacsony"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Ellenőrizd!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Minden rendben"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Napok"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Nincs műszak ezen a héten"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Húzz egy munkavállalót az oldalsávról egy cellára a műszak létrehozásához."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ új műszak"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Összesen / nap"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Húzd ide a munkavállalót"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Először adj hozzá munkavállalót"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Nincs elérhető terület — előbb hozz létre területeket"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Műszak létrehozva"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Műszak áthelyezve"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Műszak törölve"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Hiányos időpont"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Tényleg törlöd ezt a műszakot?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Törlés"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Mentés"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Mégse"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Közzététel"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Piszkozatra állítás"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Visszavonás"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Tól"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Ig"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Távollét"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Távol"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Egész nap"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Hiba: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Kommunikációs hiba"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Hét"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Ked"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Sze"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Csü"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Pén"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Szo"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Vas"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "%(kw)s. hét · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Hétfő"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Kedd"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Szerda"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Péntek"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Szombat"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Hét"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Erre a hétre nincs közzétett műszakterv."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Automatikus frissítés 5 percenként · Utoljára frissítve:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Váratlan hiba történt. Vegye fel a kapcsolatot a rendszergazdával."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Nincs jogosultsága a művelet végrehajtásához."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "A műszak nem található."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id és bereich_id kötelező."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "A forrás és a cél hét nem lehet azonos."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "Nem találhatók műszakok a forrás héten."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Hét másolva"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d műszak átmásolva a cél hétre."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Hozd létre az első műszakod"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Tervezz műszakokat fogd-és-vidd módszerrel a naptárnézetben, vagy másold át az előző hetet a \"Előző hét másolása\" varázslóval."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Másolás"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Klasszikus naptár"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Előző hét másolása"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Beállítás"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Forrás hét (hétfő)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Cél hét (hétfő)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Csak közzétett műszakok másolása"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Először töröld a cél heti meglévő műszakokat"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Figyelem: a cél hét összes meglévő műszaka véglegesen törlésre kerül a másolás előtt."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Az összes műszakot a forrás hétről a cél hétre másolja, a hét napját és időpontját megtartva."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Műszak keresése"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Ez a hét"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Jövő hét"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Jegyzetek erről a műszakról..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Új műszak"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Műszak"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Új munkavállaló"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Új terület"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Létrehozás"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Munkahelyi email (opcionális)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Alapértelmezett terület (opcionális)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Rövid kód (opcionális)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Szín"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Ez egy távolléti típus"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Válassz munkavállalót"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Válassz területet"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Válassz napot"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "A név kötelező"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "A név kötelező."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Munkavállaló létrehozva"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Terület létrehozva"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Nap"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Hét"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Hónap"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Év"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Előző időszak"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Következő időszak"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Munkavállaló, műszak, terület keresése…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "műszak"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Terület szerkesztése"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Terület frissítve"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Terület törölve"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Terület archiválva (meglévő műszakok még használják)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Tényleg törlöd a(z) „%s\" területet?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "A terület nem található."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "A távollét nem található."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "A távolléteket a HR Holidays modul kezeli. Itt törölve a HR-ben lévő szabadság-rekord is törlődik."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Tényleg törlöd %s távollétét?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Távollét törölve"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Heti órák célja"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Heti óraszám célérték. A tervező a terhelési sávhoz használja — teljes munkaidő = 40, részmunkaidő = 20, mini-állás = 10 stb."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "SABLONOK · HÚZD A BEOSZTÁSHOZ"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Új sablon hozzáadása"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Sablon szerkesztése"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Sablon létrehozva"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Sablon frissítve"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Sablon törölve"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Tényleg törlöd a(z) „%s\" sablont?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Nincs még sablon. Kattints a + gombra a létrehozáshoz."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "opcionális"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "A sablon nem található."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Műszak sablon"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Műszak sablonok"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Reggeli műszak"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Nappali műszak"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Délutáni műszak"

@@ -1,0 +1,688 @@
+# Swedish translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Skiftplanering"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Skiftområde / Roll"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Planerat skift"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Kopiera skift från en vecka till en annan"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Namn"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Kort kod"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Sekvens"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Färgindex"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML-färg"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Är frånvaro"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Beskrivning"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Anställd"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Område"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Områden"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Start"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Slut"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Anteckning"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Status"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Företag"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Utkast"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Publicerad"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Standard skiftområde"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Tillåtna områden"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Skiftets slut måste vara efter starten."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML-färg måste vara en giltig hex-kod, t.ex. #3498db eller #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Läser in…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Idag"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Föregående vecka"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Nästa vecka"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Öppna TV-kiosk"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Tillbaka till Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Sök anställd…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Områden · dra för att schemalägga"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Anställda · dra för att schemalägga"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Planerade timmar"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Beläggningsgrad"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Frånvaro"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Konflikter"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Mål: %sh"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optimalt"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Låg"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Kontrollera!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Allt OK"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Dagar"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Inga skift den här veckan"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Dra en anställd från sidofältet till en cell för att skapa ett skift."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ nytt skift"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Summa / dag"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Dra anställd hit"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Lägg till en anställd först"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Inga områden — skapa områden först"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Skift skapat"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Skift flyttat"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Skift borttaget"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Tid är ofullständig"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Vill du verkligen ta bort detta skift?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Ta bort"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Spara"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Avbryt"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Publicera"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Sätt till utkast"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Avpublicera"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Från"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Till"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Frånvaro"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Frånvarande"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Hela dagen"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Fel: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Kommunikationsfel"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Mån"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Tis"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Ons"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Tor"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Fre"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Lör"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Sön"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "v.%(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Måndag"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Tisdag"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Torsdag"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Fredag"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Lördag"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Söndag"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "v."
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Inget publicerat skiftschema för den här veckan."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Auto-uppdatering var 5:e min · Senast uppdaterad:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Ett oväntat fel inträffade. Kontakta din administratör."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Du har inte behörighet att utföra denna åtgärd."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Skift hittades inte."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id och bereich_id krävs."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Käll- och målvecka får inte vara samma."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "Inga skift i källveckan."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Vecka kopierad"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d skift kopierade till målveckan."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Skapa ditt första skift"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Planera skift via dra-och-släpp i kalendervyn eller kopiera föregående vecka med guiden \"Kopiera föregående vecka\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Kopiera"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Klassisk kalender"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Kopiera föregående vecka"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Källvecka (måndag)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Målvecka (måndag)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Kopiera endast publicerade skift"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Ta först bort befintliga skift i målveckan"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Varning: alla befintliga skift i målveckan tas bort permanent före kopiering."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Kopierar alla skift från källveckan till målveckan med samma veckodag och tid."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Sök skift"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Denna vecka"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Nästa vecka"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Anteckningar om detta skift..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Lägg till skift"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Skift"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Lägg till anställd"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Lägg till område"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Skapa"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Arbetsmejl (valfritt)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Standardområde (valfritt)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Kort kod (valfritt)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Färg"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Detta är en frånvarotyp"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Välj anställd"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Välj område"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Välj dag"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Namn krävs"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Namn krävs."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Anställd skapad"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Område skapat"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Dag"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Vecka"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Månad"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "År"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Föregående period"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Nästa period"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Sök anställda, skift, områden…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "skift"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Redigera område"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Område uppdaterat"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Område borttaget"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Område arkiverat (används fortfarande av befintliga skift)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "Vill du verkligen ta bort området \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Område hittades inte."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Frånvaron hittades inte."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Frånvaro kommer från HR Holidays. Att ta bort här tar även bort ledighetsposten i HR."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "Vill du verkligen ta bort frånvaron för %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Frånvaro borttagen"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Veckotimmål"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Mål-antal timmar per vecka. Används av planeraren för arbetsbelastningsraden — heltid = 40, deltid kan vara 20, mini-job = 10 osv."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "MALLAR · DRA FÖR ATT SCHEMALÄGGA"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Lägg till ny mall"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Redigera mall"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Mall skapad"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Mall uppdaterad"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Mall borttagen"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "Vill du verkligen ta bort mallen \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Inga mallar än. Klicka på + för att skapa."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "valfritt"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Mall hittades inte."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Skiftmall"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Skiftmallar"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Morgonpass"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Dagpass"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Kvällspass"

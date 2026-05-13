@@ -1,0 +1,688 @@
+# Turkish translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Vardiya Planlama"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Vardiya Alanı / Rol"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Planlanmış Vardiya"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Vardiyaları bir haftadan diğerine kopyala"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Ad"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Kısa Kod"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Sıra"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Renk Dizini"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML Renk"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Devamsızlık"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Çalışan"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Alan"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Alanlar"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Başlangıç"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Bitiş"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Not"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Durum"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Şirket"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Taslak"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Yayınlandı"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Varsayılan Vardiya Alanı"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "İzin Verilen Alanlar"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "Vardiya bitişi başlangıçtan sonra olmalıdır."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML rengi geçerli bir hex kod olmalı, ör. #3498db veya #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Bugün"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Önceki hafta"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Sonraki hafta"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "TV ekranını aç"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Odoo'ya dön"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Çalışan ara…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Alanlar · planlamak için sürükle"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Çalışanlar · planlamak için sürükle"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Planlanan saatler"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Doluluk oranı"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Devamsızlıklar"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Çakışmalar"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Hedef: %ss"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Optimal"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "Tamam"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Düşük"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "Kontrol et!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Hepsi tamam"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Gün"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Bu hafta vardiya yok"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Vardiya oluşturmak için kenar çubuğundan bir çalışanı hücreye sürükleyin."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ yeni vardiya"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Toplam / gün"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Çalışanı buraya sürükleyin"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Önce bir çalışan ekleyin"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Alan yok — önce alanları oluşturun"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Vardiya oluşturuldu"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Vardiya taşındı"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Vardiya silindi"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Saat eksik"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "Bu vardiya gerçekten silinsin mi?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Sil"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Kaydet"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Yayınla"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Taslağa al"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Yayından kaldır"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Başlangıç"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Bitiş"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Devamsızlık"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Yok"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Tüm gün"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Hata: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "İletişim hatası"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Pzt"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Sal"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Çar"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Per"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Cum"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Cmt"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Paz"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "Hf %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Pazartesi"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Salı"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Perşembe"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Cuma"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Cumartesi"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Pazar"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Hf"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "Bu hafta yayınlanmış vardiya planı yok."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Her 5 dakikada bir otomatik yenileme · Son güncelleme:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Beklenmeyen bir hata oluştu. Lütfen yöneticinize başvurun."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "Bu işlemi gerçekleştirme izniniz yok."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Vardiya bulunamadı."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id ve bereich_id gereklidir."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "Kaynak ve hedef hafta aynı olamaz."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "Kaynak haftada vardiya bulunamadı."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Hafta kopyalandı"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "Hedef haftaya %d vardiya kopyalandı."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "İlk vardiyanızı oluşturun"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Takvim görünümünde sürükle-bırak ile vardiya planlayın veya \"Önceki Haftayı Kopyala\" sihirbazıyla önceki haftayı kopyalayın."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Kopyala"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Klasik Takvim"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Önceki Haftayı Kopyala"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Kaynak hafta (Pazartesi)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Hedef hafta (Pazartesi)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Yalnızca yayınlanmış vardiyaları kopyala"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Önce hedef haftadaki mevcut vardiyaları sil"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Dikkat: kopyalama öncesi hedef haftadaki mevcut tüm vardiyalar kalıcı olarak silinir."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Kaynak haftadaki tüm vardiyaları aynı gün ve saatle hedef haftaya kopyalar."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Vardiya ara"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Bu hafta"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Gelecek hafta"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Bu vardiya hakkında notlar..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Vardiya ekle"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Vardiya"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Çalışan ekle"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Alan ekle"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Oluştur"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "İş e-postası (isteğe bağlı)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Varsayılan alan (isteğe bağlı)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Kısa kod (isteğe bağlı)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Renk"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Bu bir devamsızlık türüdür"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Çalışan seç"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Alan seç"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Gün seç"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "Ad zorunludur"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "Ad zorunludur."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Çalışan oluşturuldu"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Alan oluşturuldu"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Gün"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Hafta"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Ay"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Yıl"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Önceki dönem"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Sonraki dönem"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Çalışan, vardiya, alan ara…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "vardiya"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Alanı düzenle"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Alan güncellendi"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Alan silindi"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Alan arşivlendi (mevcut vardiyalarda hâlâ kullanımda)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "\"%s\" alanı gerçekten silinsin mi?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Alan bulunamadı."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Devamsızlık kaydı bulunamadı."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Devamsızlıklar HR Holidays modülünden gelir. Burada silmek HR'deki izin kaydını da kaldırır."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "%s için devamsızlık gerçekten silinsin mi?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Devamsızlık silindi"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Haftalık saat hedefi"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Haftalık hedef saat sayısı. Planlayıcı iş yükü çubuğunu hesaplamak için kullanır — tam zamanlı = 40, yarı zamanlı = 20, mini-job = 10 vb."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "ŞABLONLAR · PLANLAMAK İÇİN SÜRÜKLEYİN"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Yeni şablon ekle"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Şablonu düzenle"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Şablon oluşturuldu"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Şablon güncellendi"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Şablon silindi"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "\"%s\" şablonu gerçekten silinsin mi?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Henüz şablon yok. Oluşturmak için + tıklayın."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "isteğe bağlı"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Şablon bulunamadı."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Vardiya şablonu"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Vardiya şablonları"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Sabah vardiyası"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Gündüz vardiyası"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Akşam vardiyası"

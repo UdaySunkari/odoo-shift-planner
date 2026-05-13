@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Action: open Planning Turbo URL -->
+    <record id="action_planung_turbo" model="ir.actions.act_url">
+        <field name="name">Planning Turbo</field>
+        <field name="url">/dienstplan/planung</field>
+        <field name="target">self</field>
+    </record>
+
+    <!-- Action: open My Schedule URL -->
+    <record id="action_my_schedule" model="ir.actions.act_url">
+        <field name="name">My Schedule</field>
+        <field name="url">/dienstplan/my-schedule</field>
+        <field name="target">self</field>
+    </record>
+
+    <!-- Action: open Print View URL -->
+    <record id="action_print_view" model="ir.actions.act_url">
+        <field name="name">Print Schedule</field>
+        <field name="url">/dienstplan/print</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Root menu -->
+    <menuitem id="menu_dienstplan_root"
+              name="Shift Planning"
+              action="action_planung_turbo"
+              sequence="50"/>
+
+    <!-- Planning Turbo – only for planners (default) -->
+    <menuitem id="menu_dienstplan_turbo"
+              name="Planning Turbo ⚡"
+              parent="menu_dienstplan_root"
+              action="action_planung_turbo"
+              sequence="1"
+              groups="dienstplan_lager.group_dienstplan_planner"/>
+
+    <!-- My Schedule – visible to all viewers (employees) -->
+    <menuitem id="menu_dienstplan_my_schedule"
+              name="My Schedule"
+              parent="menu_dienstplan_root"
+              action="action_my_schedule"
+              sequence="5"
+              groups="dienstplan_lager.group_dienstplan_viewer"/>
+
+    <!-- Classic Calendar – only for planners -->
+    <menuitem id="menu_dienstplan_plan"
+              name="Classic Calendar"
+              parent="menu_dienstplan_root"
+              action="action_dienstplan_schicht"
+              sequence="10"
+              groups="dienstplan_lager.group_dienstplan_planner"/>
+
+    <!-- Print Schedule – for planners -->
+    <menuitem id="menu_dienstplan_print"
+              name="Print Schedule"
+              parent="menu_dienstplan_root"
+              action="action_print_view"
+              sequence="15"
+              groups="dienstplan_lager.group_dienstplan_planner"/>
+
+    <!-- Copy Previous Week – only for planners -->
+    <menuitem id="menu_dienstplan_copy"
+              name="Copy Previous Week"
+              parent="menu_dienstplan_root"
+              action="action_copy_previous_week"
+              sequence="20"
+              groups="dienstplan_lager.group_dienstplan_planner"/>
+
+    <!-- Configuration submenu – only for planners -->
+    <menuitem id="menu_dienstplan_config"
+              name="Configuration"
+              parent="menu_dienstplan_root"
+              sequence="99"
+              groups="dienstplan_lager.group_dienstplan_planner"/>
+
+    <menuitem id="menu_dienstplan_bereiche"
+              name="Areas"
+              parent="menu_dienstplan_config"
+              action="action_dienstplan_bereich"
+              sequence="10"/>
+
+    <menuitem id="menu_dienstplan_vorlagen"
+              name="Shift Templates"
+              parent="menu_dienstplan_config"
+              action="action_dienstplan_vorlage"
+              sequence="20"/>
+
+</odoo>

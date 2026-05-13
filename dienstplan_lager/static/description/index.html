@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Shift Planning Turbo</title>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="bg-dark text-white text-center" style="padding: 48px 24px;">
+  <h1 style="font-size: 2.2em; font-weight: 700; margin: 0 0 8px;">
+    Shift Planning Turbo
+  </h1>
+  <p style="font-size: 1.15em; margin: 0 0 16px; color: #ccc;">
+    Modern drag &amp; drop shift planner for Odoo 19 Community
+  </p>
+  <p style="margin: 0;">
+    <span class="badge badge-success" style="font-size: 0.85em; padding: 4px 10px;">GDPR-safe</span>
+    <span class="badge badge-info" style="font-size: 0.85em; padding: 4px 10px;">No external CDN</span>
+    <span class="badge badge-warning" style="font-size: 0.85em; padding: 4px 10px; color: #333;">21 Languages</span>
+    <span class="badge badge-light" style="font-size: 0.85em; padding: 4px 10px;">LGPL-3</span>
+  </p>
+</div>
+
+<!-- Main content -->
+<div style="max-width: 960px; margin: 0 auto; padding: 40px 24px;">
+
+  <!-- Overview -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px; margin-top: 0;">
+    What it does
+  </h2>
+  <p>
+    A focused, fast shift-planning cockpit for warehouses, production lines,
+    retail and hospitality teams. Drag employees onto a weekly grid, copy last
+    week with one click, and broadcast the published schedule to a TV on the
+    shop floor — all without leaving one screen.
+  </p>
+
+  <!-- Screenshot: Planner -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    The Planner
+  </h2>
+  <p>
+    <img src="screenshot_planner.png"
+         alt="Shift Planning Turbo – weekly planner view"
+         class="img-fluid"
+         style="border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 8px;" />
+  </p>
+  <p>
+    The main planning view with drag &amp; drop scheduling, live KPI bar
+    (planned hours, occupancy rate, absences, conflicts), sidebar with
+    employees, areas, and reusable shift templates.
+  </p>
+
+  <!-- Uncomment these blocks once you add the screenshots:
+
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    TV Kiosk Display
+  </h2>
+  <p>
+    <img src="screenshot_kiosk.png"
+         alt="Shift Planning Turbo – TV kiosk view"
+         class="img-fluid"
+         style="border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 8px;" />
+  </p>
+  <p>
+    Auto-refreshing public display protected by an access token. Only published
+    shifts are shown. Leave reasons are never exposed — just a generic
+    "Absent" label for maximum GDPR compliance.
+  </p>
+
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Month View
+  </h2>
+  <p>
+    <img src="screenshot_month.png"
+         alt="Shift Planning Turbo – month view"
+         class="img-fluid"
+         style="border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 8px;" />
+  </p>
+  <p>Switch between Day, Week, Month, and Year views with a single click.</p>
+
+  -->
+
+  <!-- Key Features -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Key Features
+  </h2>
+
+  <div class="row" style="margin-top: 16px;">
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Drag &amp; Drop Planning</h4>
+      <p>Drop employees, areas, or shift templates directly on the weekly
+         grid. Live conflict detection highlights overlapping shifts at a glance.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">HR Holidays Integration</h4>
+      <p>Approved leaves from <code>hr.leave</code> appear automatically on
+         the planner and the TV kiosk — no double bookkeeping needed.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Token-protected TV Kiosk</h4>
+      <p>Auto-refreshing public display of the published roster, protected
+         by an admin-set access token. Sensitive leave reasons are never exposed.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Copy Previous Week</h4>
+      <p>One-click wizard to clone last week's schedule, with options to
+         filter published shifts only or clear the target week first.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Reusable Shift Templates</h4>
+      <p>Define templates like "Early shift 06:00–14:00" and drag them onto the
+         grid to create shifts instantly with predefined times and areas.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Multi-view: Day · Week · Month · Year</h4>
+      <p>Switch between four view modes. Full global search across employees,
+         areas, and shift notes. Print-friendly layout included.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Draft &amp; Published Workflow</h4>
+      <p>Plan in draft, publish when ready. Only published shifts appear
+         on the TV kiosk. Optional email notification on publish.</p>
+    </div>
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <h4 style="color: #6366f1; margin-top: 0;">Per-employee Weekly Targets</h4>
+      <p>Set individual weekly hours targets (full-time 40h, part-time 20h,
+         mini-job 10h) for accurate workload bars in the planner.</p>
+    </div>
+  </div>
+
+  <!-- Privacy -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Privacy &amp; GDPR
+  </h2>
+  <p>
+    Designed for European customers.
+    <strong>No external resources are loaded</strong> — no Google Fonts, no CDN,
+    no analytics. All data stays on your Odoo server. The TV kiosk is disabled
+    by default and requires an administrator-set token before any data is rendered.
+    Approved leaves are shown generically as "Absent" on the public kiosk —
+    the leave reason (sick, vacation, etc.) is never exposed. Kiosk token
+    comparison uses constant-time HMAC to prevent timing attacks.
+  </p>
+
+  <!-- Languages -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Languages
+  </h2>
+  <p>
+    Available in <strong>21 languages</strong>: English, German, Spanish, French,
+    Italian, Portuguese, Brazilian Portuguese, Dutch, Polish, Czech, Slovak,
+    Romanian, Hungarian, Finnish, Swedish, Danish, Turkish, Russian, Ukrainian,
+    Arabic, Japanese, and Chinese (Simplified).
+  </p>
+
+  <!-- Installation -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Installation
+  </h2>
+  <ol>
+    <li>Copy the <code>dienstplan_lager</code> folder into your Odoo
+        addons path.</li>
+    <li>Update the apps list and install <em>Shift Planning Turbo</em>.</li>
+    <li>(Optional) To enable the TV kiosk, set a token in
+        <code>Settings → Technical → System Parameters</code> under key
+        <code>dienstplan_lager.kiosk_token</code>.</li>
+  </ol>
+
+  <!-- Kiosk setup -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Configure the TV Kiosk
+  </h2>
+  <p>The kiosk URL is <code>/dienstplan/kiosk?token=YOUR_TOKEN</code>.</p>
+  <p>Generate a strong token, for example:</p>
+  <pre style="background: #1f2937; color: #f9fafb; padding: 12px 16px; border-radius: 6px; font-size: 0.9em;">python3 -c "import secrets; print(secrets.token_urlsafe(32))"</pre>
+  <p>Store it as the value of system parameter
+     <code>dienstplan_lager.kiosk_token</code>. Leaving the parameter empty
+     keeps the kiosk disabled.</p>
+
+  <div class="alert alert-danger" style="margin: 16px 0;">
+    <strong>Security note:</strong> Anyone who knows the token can view your
+    published roster, so treat it like a password. Rotate it if it leaks.
+  </div>
+
+  <!-- Compatibility -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Compatibility
+  </h2>
+  <p>Odoo Community <strong>19.0</strong>. Depends on <code>hr</code>,
+     <code>hr_holidays</code>, <code>web</code> and <code>mail</code> —
+     all standard Community modules. No Enterprise dependencies.</p>
+
+  <!-- Access control -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    Access Control
+  </h2>
+  <p>
+    Two security groups: <strong>Shift Viewer</strong> (read-only, "My Schedule"
+    page) and <strong>Shift Planner</strong> (full planning access). HR Managers
+    automatically receive Planner rights. Multi-company record rules are included.
+  </p>
+
+  <!-- License -->
+  <h2 style="border-bottom: 2px solid #6366f1; padding-bottom: 8px;">
+    License
+  </h2>
+  <p>LGPL-3.0. See <code>LICENSE</code> for details.</p>
+
+</div>
+
+<!-- Footer -->
+<div class="text-center" style="padding: 24px; color: #999; font-size: 0.85em;">
+  © 2026 Uday Kumar Sunkari · Shift Planning Turbo
+</div>
+
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 # Shift Planning Turbo
 
 A modern weekly shift planner for Odoo Community 19.

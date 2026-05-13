@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- Shift Viewer: can see schedules, My Schedule page -->
+        <record id="group_dienstplan_viewer" model="res.groups">
+            <field name="name">Shift Viewer</field>
+        </record>
+
+        <!-- Shift Planner: full access to planning, inherits Viewer.
+             Also inherits hr_holidays.group_hr_holidays_user (Time Off
+             Officer) so planners can see all approved leaves in the
+             planner and refuse / delete an absence directly from the
+             planner UI without bumping into HR Holidays ACLs. -->
+        <record id="group_dienstplan_planner" model="res.groups">
+            <field name="name">Shift Planner</field>
+            <field name="implied_ids" eval="[
+                (4, ref('group_dienstplan_viewer')),
+                (4, ref('hr_holidays.group_hr_holidays_user')),
+            ]"/>
+        </record>
+
+        <!-- HR Managers automatically get Planner rights -->
+        <record id="hr.group_hr_manager" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('group_dienstplan_planner'))]"/>
+        </record>
+
+        <!-- Every internal user automatically gets Shift Viewer -->
+        <record id="base.group_user" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('group_dienstplan_viewer'))]"/>
+        </record>
+
+    </data>
+</odoo>

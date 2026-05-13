@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dienstplan_bereich_viewer,dienstplan.bereich viewer,model_dienstplan_bereich,dienstplan_lager.group_dienstplan_viewer,1,0,0,0
+access_dienstplan_bereich_planner,dienstplan.bereich planner,model_dienstplan_bereich,dienstplan_lager.group_dienstplan_planner,1,1,1,1
+access_dienstplan_schicht_viewer,dienstplan.schicht viewer,model_dienstplan_schicht,dienstplan_lager.group_dienstplan_viewer,1,0,0,0
+access_dienstplan_schicht_planner,dienstplan.schicht planner,model_dienstplan_schicht,dienstplan_lager.group_dienstplan_planner,1,1,1,1
+access_dienstplan_copy_wizard,dienstplan.copy.previous.week,model_dienstplan_copy_previous_week,dienstplan_lager.group_dienstplan_planner,1,1,1,1
+access_dienstplan_vorlage_viewer,dienstplan.schicht.vorlage viewer,model_dienstplan_schicht_vorlage,dienstplan_lager.group_dienstplan_viewer,1,0,0,0
+access_dienstplan_vorlage_planner,dienstplan.schicht.vorlage planner,model_dienstplan_schicht_vorlage,dienstplan_lager.group_dienstplan_planner,1,1,1,1

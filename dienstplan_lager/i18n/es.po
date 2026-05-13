@@ -1,0 +1,688 @@
+# Spanish translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "Planificación de turnos"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "Área / Rol de planificación"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "Turno planificado"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "Copiar turnos de una semana a otra"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "Nombre"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "Código corto"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "Color HTML"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "Es ausencia"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "Área"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "Áreas"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "Inicio"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "Fin"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "Nota"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "Estado"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "Compañía"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "Publicado"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "Área de turno predeterminada"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "Áreas permitidas"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "El fin del turno debe ser posterior al inicio."
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "El color HTML debe ser un código hex válido, p. ej. #3498db o #abc."
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "Cargando…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "Hoy"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "Semana anterior"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "Semana siguiente"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "Abrir kiosco TV"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Volver a Odoo"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "Buscar empleado…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "Áreas · arrastra para planificar"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "Empleados · arrastra para planificar"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "Horas planificadas"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "Tasa de ocupación"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "Ausencias"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "Conflictos"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "Objetivo: %sh"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "Óptimo"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "Bajo"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "¡Revisar!"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "Todo OK"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "Días"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "Sin turnos esta semana"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "Arrastra un empleado desde la barra lateral a una celda para crear un turno."
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ nuevo turno"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "Suma / día"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "Arrastra empleado aquí"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "Añade primero un empleado"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "Ninguna área disponible — crea áreas primero"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "Turno creado"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "Turno movido"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "Turno eliminado"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "Hora incompleta"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "¿Eliminar realmente este turno?"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "Guardar"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "Marcar como borrador"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "Despublicar"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "Desde"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "Hasta"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "Ausencia"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "Ausente"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "OFF"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "Todo el día"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "Error: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "Error de comunicación"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "Lun"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "Mar"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "Mié"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "Jue"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "Vie"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "Sáb"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "Dom"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "S %(kw)s · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "Lunes"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "Martes"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "Jueves"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "Viernes"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "Sábado"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "Domingo"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "Sem."
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "No hay plan de turnos publicado para esta semana."
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "Actualización automática cada 5 min · Última actualización:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "Ocurrió un error inesperado. Contacte con su administrador."
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "No tiene permisos para realizar esta acción."
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "Turno no encontrado."
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "Se requieren employee_id y bereich_id."
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "La semana de origen y la de destino no pueden ser idénticas."
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "No se encontraron turnos en la semana de origen."
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "Semana copiada"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d turno(s) copiado(s) a la semana destino."
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "Crea tu primer turno"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "Planifica turnos arrastrando en la vista de calendario o copia la semana anterior con el asistente \"Copiar semana anterior\"."
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "Copiar"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "Calendario clásico"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "Copiar semana anterior"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "Semana de origen (lunes)"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "Semana de destino (lunes)"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "Copiar solo turnos publicados"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "Eliminar primero los turnos existentes en la semana destino"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "Atención: todos los turnos existentes de la semana destino se eliminarán permanentemente antes de copiar."
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "Copia todos los turnos de la semana de origen en la semana de destino, manteniendo el mismo día y hora."
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "Buscar turnos"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "Semana siguiente"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "Notas sobre este turno..."
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "Añadir turno"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "Turno"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "Añadir empleado"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "Añadir área"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "Crear"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "Email de trabajo (opcional)"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "Área predeterminada (opcional)"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "Código corto (opcional)"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "Color"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "Es un tipo de ausencia"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "Seleccionar empleado"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "Seleccionar área"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "Seleccionar día"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "El nombre es obligatorio"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "El nombre es obligatorio."
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "Empleado creado"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "Área creada"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "Día"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "Semana"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "Mes"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "Año"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "Período anterior"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "Período siguiente"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "Buscar empleados, turnos, áreas…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "turnos"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "Editar área"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "Área actualizada"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "Área eliminada"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "Área archivada (aún usada por turnos existentes)"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "¿Eliminar realmente el área \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "Área no encontrada."
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "Ausencia no encontrada."
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "Las ausencias provienen del módulo HR Holidays. Eliminar aquí borrará también el registro en HR."
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "¿Eliminar realmente la ausencia de %s?"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "Ausencia eliminada"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "Objetivo de horas semanales"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "Número objetivo de horas por semana. Lo usa el planificador para la barra de carga — tiempo completo = 40, tiempo parcial puede ser 20, mini-empleo = 10, etc."
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "PLANTILLAS · ARRASTRA PARA PROGRAMAR"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "Añadir nueva plantilla"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "Editar plantilla"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "Plantilla creada"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "Plantilla actualizada"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "Plantilla eliminada"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "¿Eliminar realmente la plantilla \"%s\"?"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "Sin plantillas aún. Pulsa + para crear una."
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "opcional"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "Plantilla no encontrada."
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "Plantilla de turno"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "Plantillas de turno"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "Turno mañana"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "Turno central"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "Turno tarde"

@@ -1,0 +1,688 @@
+# Japanese translation for the dienstplan_lager module.
+# Copyright (C) 2026 Uday Kumar Sunkari
+# This file is distributed under the same license (LGPL-3) as the
+# dienstplan_lager package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 00:00+0000\n"
+"PO-Revision-Date: 2026-04-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: dienstplan_lager
+msgid "Shift Planning"
+msgstr "シフト計画"
+
+#. module: dienstplan_lager
+msgid "Shift Planning Area / Role"
+msgstr "シフト計画エリア / 役割"
+
+#. module: dienstplan_lager
+msgid "Planned Shift"
+msgstr "予定シフト"
+
+#. module: dienstplan_lager
+msgid "Copy shifts from one week into another"
+msgstr "ある週から別の週へシフトをコピー"
+
+#. module: dienstplan_lager
+msgid "Name"
+msgstr "名称"
+
+#. module: dienstplan_lager
+msgid "Short Code"
+msgstr "短縮コード"
+
+#. module: dienstplan_lager
+msgid "Sequence"
+msgstr "シーケンス"
+
+#. module: dienstplan_lager
+msgid "Color Index"
+msgstr "カラーインデックス"
+
+#. module: dienstplan_lager
+msgid "HTML Color"
+msgstr "HTML カラー"
+
+#. module: dienstplan_lager
+msgid "Is Absence"
+msgstr "欠勤扱い"
+
+#. module: dienstplan_lager
+msgid "Description"
+msgstr "説明"
+
+#. module: dienstplan_lager
+msgid "Employee"
+msgstr "従業員"
+
+#. module: dienstplan_lager
+msgid "Area"
+msgstr "エリア"
+
+#. module: dienstplan_lager
+msgid "Areas"
+msgstr "エリア"
+
+#. module: dienstplan_lager
+msgid "Start"
+msgstr "開始"
+
+#. module: dienstplan_lager
+msgid "End"
+msgstr "終了"
+
+#. module: dienstplan_lager
+msgid "Note"
+msgstr "メモ"
+
+#. module: dienstplan_lager
+msgid "Status"
+msgstr "ステータス"
+
+#. module: dienstplan_lager
+msgid "Company"
+msgstr "会社"
+
+#. module: dienstplan_lager
+msgid "Draft"
+msgstr "下書き"
+
+#. module: dienstplan_lager
+msgid "Published"
+msgstr "公開済み"
+
+#. module: dienstplan_lager
+msgid "Default Shift Area"
+msgstr "既定シフトエリア"
+
+#. module: dienstplan_lager
+msgid "Allowed Areas"
+msgstr "許可されたエリア"
+
+#. module: dienstplan_lager
+msgid "Shift end must be after shift start."
+msgstr "シフトの終了時刻は開始時刻より後である必要があります。"
+
+#. module: dienstplan_lager
+msgid "HTML Color must be a valid hex code, e.g. #3498db or #abc."
+msgstr "HTML カラーは有効な 16 進コード（例: #3498db または #abc）である必要があります。"
+
+#. module: dienstplan_lager
+msgid "Loading…"
+msgstr "読み込み中…"
+
+#. module: dienstplan_lager
+msgid "Today"
+msgstr "今日"
+
+#. module: dienstplan_lager
+msgid "Previous week"
+msgstr "前週"
+
+#. module: dienstplan_lager
+msgid "Next week"
+msgstr "翌週"
+
+#. module: dienstplan_lager
+msgid "Open TV kiosk"
+msgstr "TV キオスクを開く"
+
+#. module: dienstplan_lager
+msgid "Back to Odoo"
+msgstr "Odoo に戻る"
+
+#. module: dienstplan_lager
+msgid "Search employee…"
+msgstr "従業員を検索…"
+
+#. module: dienstplan_lager
+msgid "Areas · drag to schedule"
+msgstr "エリア · ドラッグして割当"
+
+#. module: dienstplan_lager
+msgid "Employees · drag to schedule"
+msgstr "従業員 · ドラッグして割当"
+
+#. module: dienstplan_lager
+msgid "Planned hours"
+msgstr "計画工数"
+
+#. module: dienstplan_lager
+msgid "Occupancy rate"
+msgstr "稼働率"
+
+#. module: dienstplan_lager
+msgid "Absences"
+msgstr "欠勤"
+
+#. module: dienstplan_lager
+msgid "Conflicts"
+msgstr "競合"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Target: %sh"
+msgstr "目標: %s 時間"
+
+#. module: dienstplan_lager
+msgid "Optimal"
+msgstr "最適"
+
+#. module: dienstplan_lager
+msgid "OK"
+msgstr "OK"
+
+#. module: dienstplan_lager
+msgid "Low"
+msgstr "低い"
+
+#. module: dienstplan_lager
+msgid "Check!"
+msgstr "要確認！"
+
+#. module: dienstplan_lager
+msgid "All OK"
+msgstr "すべて OK"
+
+#. module: dienstplan_lager
+msgid "Days"
+msgstr "日"
+
+#. module: dienstplan_lager
+msgid "No shifts this week"
+msgstr "今週はシフトなし"
+
+#. module: dienstplan_lager
+msgid "Drag an employee from the sidebar onto a cell to create a shift."
+msgstr "サイドバーから従業員をセルにドラッグしてシフトを作成します。"
+
+#. module: dienstplan_lager
+msgid "+ new shift"
+msgstr "+ 新規シフト"
+
+#. module: dienstplan_lager
+msgid "Sum / day"
+msgstr "合計 / 日"
+
+#. module: dienstplan_lager
+msgid "Pull employee here"
+msgstr "ここに従業員をドロップ"
+
+#. module: dienstplan_lager
+msgid "Add an employee first"
+msgstr "先に従業員を追加してください"
+
+#. module: dienstplan_lager
+msgid "No area available – create areas first"
+msgstr "エリアがありません — 先にエリアを作成してください"
+
+#. module: dienstplan_lager
+msgid "Shift created"
+msgstr "シフトを作成しました"
+
+#. module: dienstplan_lager
+msgid "Shift moved"
+msgstr "シフトを移動しました"
+
+#. module: dienstplan_lager
+msgid "Shift deleted"
+msgstr "シフトを削除しました"
+
+#. module: dienstplan_lager
+msgid "Time is incomplete"
+msgstr "時刻が未入力です"
+
+#. module: dienstplan_lager
+msgid "Really delete this shift?"
+msgstr "本当にこのシフトを削除しますか？"
+
+#. module: dienstplan_lager
+msgid "Delete"
+msgstr "削除"
+
+#. module: dienstplan_lager
+msgid "Save"
+msgstr "保存"
+
+#. module: dienstplan_lager
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. module: dienstplan_lager
+msgid "Publish"
+msgstr "公開"
+
+#. module: dienstplan_lager
+msgid "Set to Draft"
+msgstr "下書きに戻す"
+
+#. module: dienstplan_lager
+msgid "Unpublish"
+msgstr "公開を取消"
+
+#. module: dienstplan_lager
+msgid "From"
+msgstr "開始"
+
+#. module: dienstplan_lager
+msgid "To"
+msgstr "終了"
+
+#. module: dienstplan_lager
+msgid "Absence"
+msgstr "欠勤"
+
+#. module: dienstplan_lager
+msgid "Absent"
+msgstr "欠勤"
+
+#. module: dienstplan_lager
+msgid "OFF"
+msgstr "休"
+
+#. module: dienstplan_lager
+msgid "All day"
+msgstr "終日"
+
+#. module: dienstplan_lager
+msgid "Error: "
+msgstr "エラー: "
+
+#. module: dienstplan_lager
+msgid "Communication error"
+msgstr "通信エラー"
+
+#. module: dienstplan_lager
+msgid "Mon"
+msgstr "月"
+
+#. module: dienstplan_lager
+msgid "Tue"
+msgstr "火"
+
+#. module: dienstplan_lager
+msgid "Wed"
+msgstr "水"
+
+#. module: dienstplan_lager
+msgid "Thu"
+msgstr "木"
+
+#. module: dienstplan_lager
+msgid "Fri"
+msgstr "金"
+
+#. module: dienstplan_lager
+msgid "Sat"
+msgstr "土"
+
+#. module: dienstplan_lager
+msgid "Sun"
+msgstr "日"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "CW %(kw)s · %(from)s – %(to)s"
+msgstr "第 %(kw)s 週 · %(from)s – %(to)s"
+
+#. module: dienstplan_lager
+msgid "Monday"
+msgstr "月曜日"
+
+#. module: dienstplan_lager
+msgid "Tuesday"
+msgstr "火曜日"
+
+#. module: dienstplan_lager
+msgid "Wednesday"
+msgstr "水曜日"
+
+#. module: dienstplan_lager
+msgid "Thursday"
+msgstr "木曜日"
+
+#. module: dienstplan_lager
+msgid "Friday"
+msgstr "金曜日"
+
+#. module: dienstplan_lager
+msgid "Saturday"
+msgstr "土曜日"
+
+#. module: dienstplan_lager
+msgid "Sunday"
+msgstr "日曜日"
+
+#. module: dienstplan_lager
+msgid "CW"
+msgstr "週"
+
+#. module: dienstplan_lager
+msgid "No published shift plan for this week."
+msgstr "今週の公開シフトはありません。"
+
+#. module: dienstplan_lager
+msgid "Auto-refresh every 5 min · Last updated:"
+msgstr "5 分ごとに自動更新 · 最終更新:"
+
+#. module: dienstplan_lager
+msgid "An unexpected error occurred. Please contact your administrator."
+msgstr "予期しないエラーが発生しました。管理者にお問い合わせください。"
+
+#. module: dienstplan_lager
+msgid "You do not have permission to perform this action."
+msgstr "この操作を実行する権限がありません。"
+
+#. module: dienstplan_lager
+msgid "Shift not found."
+msgstr "シフトが見つかりません。"
+
+#. module: dienstplan_lager
+msgid "employee_id and bereich_id are required."
+msgstr "employee_id と bereich_id が必要です。"
+
+#. module: dienstplan_lager
+msgid "Source and target week must not be identical."
+msgstr "コピー元と先の週は同じにできません。"
+
+#. module: dienstplan_lager
+msgid "No shifts found in the source week."
+msgstr "コピー元の週にシフトがありません。"
+
+#. module: dienstplan_lager
+msgid "Week copied"
+msgstr "週をコピーしました"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "%d shift(s) copied to the target week."
+msgstr "%d 件のシフトを対象の週にコピーしました。"
+
+#. module: dienstplan_lager
+msgid "Create your first shift"
+msgstr "最初のシフトを作成"
+
+#. module: dienstplan_lager
+msgid "Plan shifts via drag & drop in the calendar view or copy the previous week with the \"Copy Previous Week\" wizard."
+msgstr "カレンダー画面でドラッグ＆ドロップしてシフトを計画するか、「前週をコピー」ウィザードで前週をコピーします。"
+
+#. module: dienstplan_lager
+msgid "Copy"
+msgstr "コピー"
+
+#. module: dienstplan_lager
+msgid "Planning Turbo"
+msgstr "Planning Turbo"
+
+#. module: dienstplan_lager
+msgid "Classic Calendar"
+msgstr "クラシックカレンダー"
+
+#. module: dienstplan_lager
+msgid "Copy Previous Week"
+msgstr "前週をコピー"
+
+#. module: dienstplan_lager
+msgid "Configuration"
+msgstr "設定"
+
+#. module: dienstplan_lager
+msgid "Source week (Monday)"
+msgstr "コピー元の週（月曜）"
+
+#. module: dienstplan_lager
+msgid "Target week (Monday)"
+msgstr "対象の週（月曜）"
+
+#. module: dienstplan_lager
+msgid "Copy only published shifts"
+msgstr "公開済みのシフトのみコピー"
+
+#. module: dienstplan_lager
+msgid "Delete existing shifts in target week first"
+msgstr "対象の週の既存シフトを先に削除"
+
+#. module: dienstplan_lager
+msgid "Caution: all existing shifts of the target week will be permanently deleted before copying."
+msgstr "注意：コピー前に対象の週の既存シフトはすべて完全に削除されます。"
+
+#. module: dienstplan_lager
+msgid "Copies all shifts from the source week into the target week, keeping the same weekday and time."
+msgstr "コピー元の週のすべてのシフトを、同じ曜日・時刻で対象の週にコピーします。"
+
+#. module: dienstplan_lager
+msgid "Search Shifts"
+msgstr "シフトを検索"
+
+#. module: dienstplan_lager
+msgid "This Week"
+msgstr "今週"
+
+#. module: dienstplan_lager
+msgid "Next Week"
+msgstr "来週"
+
+#. module: dienstplan_lager
+msgid "Notes about this shift..."
+msgstr "このシフトに関するメモ…"
+
+#. module: dienstplan_lager
+msgid "Add new shift"
+msgstr "シフトを追加"
+
+#. module: dienstplan_lager
+msgid "Shift"
+msgstr "シフト"
+
+#. module: dienstplan_lager
+msgid "Add new employee"
+msgstr "従業員を追加"
+
+#. module: dienstplan_lager
+msgid "Add new area"
+msgstr "エリアを追加"
+
+#. module: dienstplan_lager
+msgid "Create"
+msgstr "作成"
+
+#. module: dienstplan_lager
+msgid "Work email (optional)"
+msgstr "勤務先メール（任意）"
+
+#. module: dienstplan_lager
+msgid "Default area (optional)"
+msgstr "既定エリア（任意）"
+
+#. module: dienstplan_lager
+msgid "Short code (optional)"
+msgstr "短縮コード（任意）"
+
+#. module: dienstplan_lager
+msgid "Color"
+msgstr "色"
+
+#. module: dienstplan_lager
+msgid "This is an absence type"
+msgstr "これは欠勤タイプです"
+
+#. module: dienstplan_lager
+msgid "Select employee"
+msgstr "従業員を選択"
+
+#. module: dienstplan_lager
+msgid "Select area"
+msgstr "エリアを選択"
+
+#. module: dienstplan_lager
+msgid "Select day"
+msgstr "日付を選択"
+
+#. module: dienstplan_lager
+msgid "Name is required"
+msgstr "名前は必須です"
+
+#. module: dienstplan_lager
+msgid "Name is required."
+msgstr "名前は必須です。"
+
+#. module: dienstplan_lager
+msgid "Employee created"
+msgstr "従業員を作成しました"
+
+#. module: dienstplan_lager
+msgid "Area created"
+msgstr "エリアを作成しました"
+
+#. module: dienstplan_lager
+msgid "Day"
+msgstr "日"
+
+#. module: dienstplan_lager
+msgid "Week"
+msgstr "週"
+
+#. module: dienstplan_lager
+msgid "Month"
+msgstr "月"
+
+#. module: dienstplan_lager
+msgid "Year"
+msgstr "年"
+
+#. module: dienstplan_lager
+msgid "Previous period"
+msgstr "前の期間"
+
+#. module: dienstplan_lager
+msgid "Next period"
+msgstr "次の期間"
+
+#. module: dienstplan_lager
+msgid "Search employees, shifts, areas…"
+msgstr "従業員・シフト・エリアを検索…"
+
+#. module: dienstplan_lager
+msgid "shifts"
+msgstr "シフト"
+
+#. module: dienstplan_lager
+msgid "Edit area"
+msgstr "エリアを編集"
+
+#. module: dienstplan_lager
+msgid "Area updated"
+msgstr "エリアを更新しました"
+
+#. module: dienstplan_lager
+msgid "Area deleted"
+msgstr "エリアを削除しました"
+
+#. module: dienstplan_lager
+msgid "Area archived (still used by existing shifts)"
+msgstr "エリアをアーカイブしました（既存シフトで使用中）"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete area \"%s\"?"
+msgstr "本当にエリア「%s」を削除しますか？"
+
+#. module: dienstplan_lager
+msgid "Area not found."
+msgstr "エリアが見つかりません。"
+
+#. module: dienstplan_lager
+msgid "Absence not found."
+msgstr "欠勤記録が見つかりません。"
+
+#. module: dienstplan_lager
+msgid "Absences come from HR Holidays. Deleting here will also remove the time off record from HR."
+msgstr "欠勤データは HR Holidays モジュールから取得されます。ここで削除すると HR の休暇記録も削除されます。"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete the absence for %s?"
+msgstr "%s さんの欠勤記録を本当に削除しますか？"
+
+#. module: dienstplan_lager
+msgid "Absence deleted"
+msgstr "欠勤記録を削除しました"
+
+#. module: dienstplan_lager
+msgid "Weekly hours target"
+msgstr "週間目標時間"
+
+#. module: dienstplan_lager
+msgid "Target number of hours per week. Used by the planner to compute the workload bar — full-time = 40, part-time might be 20, mini-job = 10, etc."
+msgstr "週間目標時間。プランナーが作業負荷バーを計算するために使用 — フルタイム = 40、パートタイム = 20、ミニジョブ = 10 など。"
+
+#. module: dienstplan_lager
+msgid "TEMPLATES · DRAG TO SCHEDULE"
+msgstr "テンプレート · ドラッグして割当"
+
+#. module: dienstplan_lager
+msgid "Add new template"
+msgstr "新しいテンプレートを追加"
+
+#. module: dienstplan_lager
+msgid "Edit template"
+msgstr "テンプレートを編集"
+
+#. module: dienstplan_lager
+msgid "Template created"
+msgstr "テンプレートを作成しました"
+
+#. module: dienstplan_lager
+msgid "Template updated"
+msgstr "テンプレートを更新しました"
+
+#. module: dienstplan_lager
+msgid "Template deleted"
+msgstr "テンプレートを削除しました"
+
+#. module: dienstplan_lager
+#, python-format
+msgid "Really delete template \"%s\"?"
+msgstr "本当にテンプレート「%s」を削除しますか？"
+
+#. module: dienstplan_lager
+msgid "No templates yet. Click + to create one."
+msgstr "テンプレートがまだありません。+ をクリックして作成。"
+
+#. module: dienstplan_lager
+msgid "optional"
+msgstr "任意"
+
+#. module: dienstplan_lager
+msgid "Template not found."
+msgstr "テンプレートが見つかりません。"
+
+#. module: dienstplan_lager
+msgid "Shift Template"
+msgstr "シフトテンプレート"
+
+#. module: dienstplan_lager
+msgid "Shift Templates"
+msgstr "シフトテンプレート"
+
+#. module: dienstplan_lager
+msgid "Early shift"
+msgstr "早番"
+
+#. module: dienstplan_lager
+msgid "Mid shift"
+msgstr "日勤"
+
+#. module: dienstplan_lager
+msgid "Late shift"
+msgstr "遅番"
