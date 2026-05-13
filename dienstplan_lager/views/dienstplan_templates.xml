@@ -10,7 +10,7 @@
                 <meta charset="utf-8"/>
                 <title>Shift Planning Turbo</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/app.css?v=4.1.5"/>
+                <link rel="stylesheet" href="/dienstplan_lager/static/src/css/app.css?v=19.0.4.1.6"/>
             </head>
             <body>
                 <script type="application/json" id="i18n-data">
@@ -121,7 +121,7 @@
                 <div id="popover-backdrop" class="popover-backdrop"></div>
                 <div id="popover" class="popover"></div>
 
-                <script src="/dienstplan_lager/static/src/js/app.js?v=4.1.9-onebutton"></script>
+                <script src="/dienstplan_lager/static/src/js/app.js?v=19.0.4.1.6-onebutton"></script>
             </body>
         </html>
     </template>

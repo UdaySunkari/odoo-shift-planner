@@ -39,7 +39,7 @@ Key features
     """,
     'author': 'Uday Kumar Sunkari',
     'website': 'https://github.com/UdaySunkari',
-    'license': 'LGPL-3',
+    'license': 'OPL-1',
     'support': 'udaykumar.sunkari1@gmail.com',
     'price': 19.00,
     'currency': 'EUR',
