@@ -1247,6 +1247,7 @@ class DienstplanKiosk(http.Controller):
             'today': today,
             'offset': offset_int,
             'token': token,
+            'is_authenticated': bool(request.session.uid),
             'user_lang_short': (request.env.lang or 'en_US').split('_')[0],
             'lbl_title': _('Shift Planning'),
             'lbl_cw': _('CW'),

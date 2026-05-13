@@ -3654,8 +3654,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  document.getElementById('btn-tv').addEventListener('click', () => {
-    window.open('/dienstplan/print?offset=' + state.offset, '_blank');
+  document.getElementById('btn-tv').addEventListener('click', async () => {
+    try {
+      const settings = await rpc('/dienstplan/api/settings/get', {});
+      const token = settings && settings.kiosk_token;
+      const url = token
+        ? '/dienstplan/kiosk?token=' + encodeURIComponent(token)
+        : '/dienstplan/kiosk';
+      window.open(url, '_blank');
+    } catch (e) {
+      window.open('/dienstplan/kiosk', '_blank');
+    }
   });
 
   // Sidebar tab switching

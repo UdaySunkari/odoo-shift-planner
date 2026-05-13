@@ -140,6 +140,16 @@
                 <link rel="stylesheet" href="/dienstplan_lager/static/src/css/kiosk.css"/>
             </head>
             <body>
+                <t t-if="is_authenticated">
+                    <a class="kiosk-print-btn"
+                       t-attf-href="/dienstplan/print?offset=#{offset}"
+                       target="_blank"
+                       style="position: fixed; top: 16px; right: 16px; z-index: 100;
+                              background: #6366f1; color: #fff; padding: 8px 16px;
+                              border-radius: 6px; text-decoration: none;
+                              font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                              font-size: 14px; font-weight: 600;">🖨️ Print</a>
+                </t>
                 <div class="header">
                     <h1><t t-esc="lbl_title"/></h1>
                     <div class="kw-box">

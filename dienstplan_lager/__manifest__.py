@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Shift Planning Turbo',
-    'version': '19.0.4.1.6',
+    'version': '19.0.4.1.7',
     'category': 'Human Resources',
     'summary': 'Modern weekly shift planner with drag & drop, '
                'TV kiosk display and HR Holidays integration',
@@ -41,7 +41,7 @@ Key features
     'website': 'https://github.com/UdaySunkari',
     'license': 'LGPL-3',
     'support': 'udaykumar.sunkari1@gmail.com',
-    'price': 19.00,
+    'price': 39.00,
     'currency': 'EUR',
     'depends': [
         'base',
